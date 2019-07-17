@@ -1,0 +1,17 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.site-list {
+  @include list-reset();
+}
+
+.site-list__item {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.site-list__link {
+  font-size: $base-font-size + 2px;
+  color: $bold-color;
+  text-decoration: none;
+  font-weight: 700;
+}
