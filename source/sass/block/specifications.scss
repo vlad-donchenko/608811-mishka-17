@@ -1,0 +1,26 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+
+.specifications {
+
+  &__text {
+    font-size: $base-font-size;
+    font-weight: 400;
+    color: $base-color;
+    line-height: $base-line-height;
+  }
+
+  &__list {
+    border-spacing: 0;
+    border: none;
+    border-collapse: collapse;
+  }
+
+  &__item {
+    border-bottom: 1px solid #ececec;
+  }
+
+}
+
+
