@@ -10,5 +10,9 @@
     line-height: $base-line-height + 6px;
   }
 
+  &__list {
+    @include list-reset();
+  }
+
 }
 
