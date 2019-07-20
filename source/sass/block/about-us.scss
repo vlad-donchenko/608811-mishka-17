@@ -2,12 +2,10 @@
 @import "../global/mixins";
 
 .about-us {
-
   &__headline {
     font-size: $base-font-size + 10px;
     color: $black;
     line-height: $base-line-height + 6px;
     font-weight: 700;
   }
-
 }

@@ -1,0 +1,15 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.advantages {
+  @include list-reset();
+}
+
+.advantages__text {
+  color: $black;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height - 4px;
+  font-weight: 700;
+}
+
+

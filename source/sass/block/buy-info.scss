@@ -2,12 +2,10 @@
 @import "../global/mixins";
 
 .buy-info {
-
   &__price {
     font-size: $base-font-size + 2px;
     color: $base-color;
     line-height: $base-line-height;
     font-weight: 700;
   }
-
 }

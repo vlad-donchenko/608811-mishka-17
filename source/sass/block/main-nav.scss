@@ -2,9 +2,7 @@
 @import "../global/mixins";
 
 .main-nav {
-
   &__list {
     @include list-reset();
   }
-
 }

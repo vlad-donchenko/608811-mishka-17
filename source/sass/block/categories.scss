@@ -2,17 +2,14 @@
 @import "../global/mixins";
 
 .categories {
-
   &__promo {
     color: $black;
     font-size: $base-font-size * 2 - 3px;
     font-weight: 700;
     line-height: $base-line-height + 6px;
   }
-
   &__list {
     @include list-reset();
   }
-
 }
 
