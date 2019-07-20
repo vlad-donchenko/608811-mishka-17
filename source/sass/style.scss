@@ -1,16 +1,16 @@
-@import "global/fonts";
-@import "global/variables";
-@import "global/mixins";
-@import "global/global";
-@import "block/site-header";
-@import "block/main-nav";
-@import "block/site-list";
-@import "block/categories";
-@import "block/categories-menu";
-@import "block/product-week";
-@import "block/popular-product";
-@import "block/specifications";
-@import "block/buy-info";
-@import "block/button";
-
-
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "block/site-header.scss";
+@import "block/main-nav.scss";
+@import "block/site-list.scss";
+@import "block/categories.scss";
+@import "block/categories-menu.scss";
+@import "block/product-week.scss";
+@import "block/popular-product.scss";
+@import "block/specifications.scss";
+@import "block/buy-info.scss";
+@import "block/button.scss";
+@import "block/about-us.scss";
