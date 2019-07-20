@@ -1,0 +1,13 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.page-name {
+  background-color: #f1f1f1;
+}
+
+.page-name__headline {
+  color: $black;
+  font-size: $base-font-size * 2 - 3px;
+  font-weight: 700;
+  line-height: $base-line-height + 6px;
+}
