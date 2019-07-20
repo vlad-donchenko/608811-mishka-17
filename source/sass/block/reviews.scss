@@ -1,0 +1,11 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.reviews {
+  &__headline {
+    color: $black;
+    font-size: $base-font-size + 10px;
+    line-height: $base-line-height + 6px;
+    font-weight: 700;
+  }
+}
