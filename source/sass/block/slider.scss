@@ -1,0 +1,11 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.slider__list {
+  @include list-reset();
+}
+
+.slider__toggle {
+  border: 1px solid #ececec;
+  background-color: transparent;
+}

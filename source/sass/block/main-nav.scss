@@ -1,8 +1,6 @@
 @import "../global/variables";
 @import "../global/mixins";
 
-.main-nav {
-  &__list {
-    @include list-reset();
-  }
+.main-nav__list {
+  @include list-reset();
 }
