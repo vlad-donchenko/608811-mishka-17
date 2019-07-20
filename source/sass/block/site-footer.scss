@@ -1,6 +1,14 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.site-footer {
+  background-color: #f1f1f1;
+}
+
+.site-footer__list {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .site-footer__developer-link {
   color: $black;
   font-size: $base-font-size + 4px;
