@@ -20,7 +20,8 @@
   font-size: $base-font-size + 2px;
   line-height: $base-line-height + 6px;
   text-decoration: none;
-  &:after {
+
+  &::after {
     content: " ";
     position: absolute;
     left: 0;
@@ -31,12 +32,15 @@
     background-color: $secondary-color;
     transition: 0.2s;
   }
+
   &:hover {
     color: #46c1ae;
   }
+
   &:focus {
     color: #46c1ae;
-    &:after {
+
+    &::after {
       width: 84%;
     }
   }
@@ -48,4 +52,3 @@
   line-height: $base-line-height + 6px;
   font-style: normal;
 }
-

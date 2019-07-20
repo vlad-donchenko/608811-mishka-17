@@ -10,10 +10,12 @@
   font-weight: 700;
   border: 2px solid $base-color;
   text-decoration: none;
+
   &:hover {
     background-color: $base-color;
     color: #ffffff;
   }
+
   &:focus {
     background-color: $base-color;
     color: rgba(#ffffff, 0.3);
