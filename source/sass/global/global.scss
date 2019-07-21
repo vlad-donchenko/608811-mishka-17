@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  *::after {
+    box-sizing: inherit;
+  }
+
+  *::before {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-color;
+}
+
+img {
+  max-width: 100%;
+}

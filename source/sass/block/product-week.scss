@@ -1,0 +1,17 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.product-week__promo {
+  font-size: $base-font-size + 10px;
+  font-weight: 700;
+  line-height: $base-line-height + 6px;
+  color: $black;
+}
+
+.product-week__clarification {
+  color: $secondary-color;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height - 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

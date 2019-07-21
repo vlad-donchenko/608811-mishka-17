@@ -1,0 +1,15 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.page-name {
+  padding: 76px 0 80px 0;
+  background-color: #f1f1f1;
+}
+
+.page-name__headline {
+  color: $black;
+  font-size: $base-font-size * 2 - 3px;
+  font-weight: 700;
+  line-height: $base-line-height + 6px;
+  margin: 0;
+}

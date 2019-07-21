@@ -1,0 +1,9 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.about-us__headline {
+  font-size: $base-font-size + 10px;
+  color: $black;
+  line-height: $base-line-height + 6px;
+  font-weight: 700;
+}

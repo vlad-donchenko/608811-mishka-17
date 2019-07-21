@@ -1,0 +1,15 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.video-process__headline {
+  color: $black;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height;
+  font-weight: 700;
+}
+
+.description-wrap__text {
+  color: $base-color;
+  font-size: $base-font-size - 2px;
+  line-height: $base-line-height;
+}

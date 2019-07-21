@@ -1,0 +1,11 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.categories-menu__link {
+  color: #ffffff;
+  font-size: $base-font-size + 5px;
+  font-weight: 700;
+  line-height: $base-line-height + 6px;
+  background-color: $secondary-color;
+  text-decoration: none;
+}
