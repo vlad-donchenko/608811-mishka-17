@@ -1,7 +1,23 @@
 @import "variables";
 @import "mixins";
 
-.site-wrapper {
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  *::after {
+    box-sizing: inherit;
+  }
+
+  *::before {
+    box-sizing: inherit;
+  }
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -11,10 +27,6 @@
   color: $base-color;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+img {
+  max-width: 100%;
 }
