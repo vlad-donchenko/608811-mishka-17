@@ -1,2 +1,28 @@
 @import "../global/variables";
 @import "../global/mixins";
+
+.site-header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $mobile-large) {
+  .site-header {
+    max-width: 575px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-header {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    max-width: 1150px;
+  }
+}
+
