@@ -5,7 +5,7 @@
 @import "global/global.scss";
 @import "block/site-header.scss";
 @import "block/main-nav.scss";
-@import "block/site-list.scss";
+@import "block/buy-list";
 @import "block/categories.scss";
 @import "block/categories-menu.scss";
 @import "block/product-week.scss";
@@ -26,3 +26,5 @@
 @import "block/process-production.scss";
 @import "block/checkout.scss";
 @import "block/visually-hidden";
+@import "block/interesting-offers";
+@import "block/action-list.scss";

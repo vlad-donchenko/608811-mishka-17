@@ -1,0 +1,33 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.interesting-offers {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .interesting-offers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .interesting-offers__link {
+    color: $black;
+    font-weight: 700;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba($black, 0.6);
+    }
+
+    &:hover {
+      color: rgba($black, 0.3);
+    }
+  }
+
+  .interesting-offers {
+    width: 322px;
+  }
+}

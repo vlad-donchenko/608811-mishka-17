@@ -8,8 +8,8 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header__wrap">
-    <nav class="main-nav">
+  <nav class="main-nav">
+    <div class="main-nav__container main-nav__container--menu">
       <div class="main-nav__logo-wrap">
         <a class="main-nav__logo">
           <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
@@ -18,42 +18,63 @@
       <button class="main-nav__toggle main-nav__toggle--open">
         Открыть меню
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--catalog">
-          <a href="#" class="site-list__link">
+      <ul class="main-nav__list buy-list">
+        <li class="buy-list__item buy-list__item--catalog">
+          <a href="#" class="buy-list__link">
             Каталог товаров
           </a>
         </li>
-        <li class="site-list__item  site-list__item--order">
-          <a href="#" class="site-list__link">
+        <li class="buy-list__item  buy-list__item--order">
+          <a href="#" class="buy-list__link">
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item site-list__item--search">
-          <a href="#" class="site-list__link site-list__link--search">
-            <span class="site-list__text">Поиск по сайту</span>
+      </ul>
+      <ul class="main-nav__list action-list">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
+            Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item site-list__item--cart">
-          <a href="#" class="site-list__link site-list__link--cart">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
             Корзина: пока пуста
           </a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+    <div class="main-nav__wrap">
+      <div class="main-nav__container main-nav__container--bottom">
+          <ul class="main-nav__list interesting-offers">
+            <li class="interesting-offers__item">
+              <a href="#" class="interesting-offers__link">
+                Новые поступления
+              </a>
+            </li>
+            <li class="interesting-offers__item">
+              <a href="#" class="interesting-offers__link">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <p class="main-nav__delivery">
+            Бесплатная доставка по России
+          </p>
+      </div>
+    </div>
+  </nav>
 </header>
 <main class="site-main">
   <h1 class="visually-hidden">
     Интернет магазин Мишка
   </h1>
   <section class="categories">
-    <div class="categories__wrap">
+    <div class="categories__container">
       <h2 class="visually-hidden">
         Категории
       </h2>
       <p class="categories__promo">
-        Милые штуки ручной
+        Милые штуки <br class="categories__separator"> ручной <br class="categories__separator">
         работы для дома
       </p>
       <ul class="categories__list categories-menu">
@@ -87,30 +108,30 @@
           </p>
           <table class="specifications__list">
             <tbody>
-              <tr class="specifications__item">
-                <td>
-                  Цвет:
-                </td>
-                <td>
-                  «Тиффани»/серый
-                </td>
-              </tr>
-              <tr class="specifications__item">
-                <td>
-                  Диаметр:
-                </td>
-                <td>
-                  25 см
-                </td>
-              </tr>
-              <tr class="specifications__item">
-                <td>
-                  Высота:
-                </td>
-                <td>
-                  15 см
-                </td>
-              </tr>
+            <tr class="specifications__item">
+              <td>
+                Цвет:
+              </td>
+              <td>
+                «Тиффани»/серый
+              </td>
+            </tr>
+            <tr class="specifications__item">
+              <td>
+                Диаметр:
+              </td>
+              <td>
+                25 см
+              </td>
+            </tr>
+            <tr class="specifications__item">
+              <td>
+                Высота:
+              </td>
+              <td>
+                15 см
+              </td>
+            </tr>
             </tbody>
           </table>
         </div>
@@ -238,17 +259,18 @@
             адрес:
           </div>
           <div class="contacts__content">
-              <address class="contacts__address">
-                г. Санкт-Петербург,
-                ул. Большая Конюшенная,
-                д. 19/8, офис 101
-              </address>
+            <address class="contacts__address">
+              г. Санкт-Петербург,
+              ул. Большая Конюшенная,
+              д. 19/8, офис 101
+            </address>
           </div>
         </div>
       </div>
     </div>
     <div class="contacts__map">
-      <img src="img/map.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      <img src="img/map.jpg" width="322" height="457"
+           alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
     </div>
     <div class="contacts__write">
       <a href="#" class="button">
