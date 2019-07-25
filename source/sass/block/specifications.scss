@@ -2,6 +2,7 @@
 @import "../global/mixins";
 
 .specifications__text {
+  max-width: 260px;
   font-size: $base-font-size;
   font-weight: 400;
   color: $base-color;
@@ -17,3 +18,10 @@
 .specifications__item {
   border-bottom: 1px solid #ececec;
 }
+
+@media (min-width: $tablet-width) {
+  .specifications {
+    width: 291px;
+  }
+}
+

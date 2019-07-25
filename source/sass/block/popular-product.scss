@@ -1,0 +1,32 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.popular-product--single {
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .popular-product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .popular-product__image {
+    width: 333px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-product__description {
+    margin-left: 175px;
+  }
+
+  .popular-product__image {
+    width: 525px;
+  }
+
+  .popular-product__buy {
+    margin-left: 175px;
+  }
+}
