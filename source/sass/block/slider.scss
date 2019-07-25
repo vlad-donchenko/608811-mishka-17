@@ -1,11 +1,31 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.slider {
+  position: relative;
+}
+
 .slider__list {
   @include list-reset();
 }
 
 .slider__toggle {
+  width: 50%;
+  height: 52px;
   border: 1px solid #ececec;
   background-color: transparent;
+}
+
+.slider__toggle--prev {
+  margin-right: -1px;
+}
+
+.slider__toggles {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .slider--reviews {
+    width: 100%;
+  }
 }
