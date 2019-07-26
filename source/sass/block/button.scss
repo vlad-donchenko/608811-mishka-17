@@ -34,10 +34,18 @@
   width: 100%;
 }
 
+.button--contacts {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;
     padding-left: 34px;
     padding-right: 33px;
+  }
+
+  .button--contacts {
+    width: auto;
   }
 }
