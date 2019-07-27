@@ -38,6 +38,11 @@
   width: 100%;
 }
 
+.button--process {
+  width: 100%;
+  padding: 14px 22px;
+}
+
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;

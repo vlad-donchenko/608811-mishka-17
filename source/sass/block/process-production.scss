@@ -1,15 +1,64 @@
 @import "../global/variables";
 @import "../global/mixins";
 
-.video-process__headline {
-  color: $black;
-  font-size: $base-font-size + 2px;
-  line-height: $base-line-height;
-  font-weight: 700;
+.process-production {
+  margin-top: 30px;
+  margin-bottom: 58px;
 }
 
-.description-wrap__text {
+.process-production-wrap {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.process-production__description {
+  margin: 0 0 29px 0;
   color: $base-color;
   font-size: $base-font-size - 2px;
   line-height: $base-line-height;
+}
+
+.process-production__caption-wrap {
+  padding: 34px;
+}
+
+@media (min-width: $mobile-large) {
+  .process-production-wrap {
+    max-width: 635px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .process-production-wrap {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .process-production__caption-wrap {
+    padding: 41px 47px 46px 42px;
+  }
+
+  .process-production__video {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .process-production-wrap {
+    max-width: 1150px;
+  }
+
+  .process-production__video {
+    width: 682px;
+  }
+
+  .process-production__caption-wrap {
+    width: 222px;
+    margin: 42px 57px 60px auto;
+    padding: 0;
+  }
 }
