@@ -28,6 +28,10 @@
   display: flex;
 }
 
+.main-nav__wrap--not-home {
+  background-color: #f1f1f1;
+}
+
 @media (min-width: $mobile-large) {
   .main-nav__container {
     max-width: 575px;
