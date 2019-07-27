@@ -14,6 +14,7 @@
 
 .products__item {
   margin-bottom: 30px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -52,6 +53,7 @@
   .products__item {
     width: 316px;
     margin-right: 51px;
+
     &:last-child {
       margin-right: 0;
     }

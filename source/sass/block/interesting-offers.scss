@@ -9,6 +9,7 @@
   .interesting-offers {
     display: flex;
     flex-wrap: wrap;
+    width: 322px;
   }
 
   .interesting-offers__link {
@@ -22,12 +23,8 @@
       color: rgba($black, 0.6);
     }
 
-    &:hover {
+    &:focus {
       color: rgba($black, 0.3);
     }
-  }
-
-  .interesting-offers {
-    width: 322px;
   }
 }

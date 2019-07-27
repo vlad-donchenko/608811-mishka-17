@@ -10,7 +10,8 @@
   line-height: $base-line-height + 6px;
   background-color: $secondary-color;
   text-decoration: none;
-  &:focus{
+
+  &:focus {
     color: rgba(#ffffff, 0.3);
   }
 }
@@ -29,4 +30,3 @@
     width: 50%;
   }
 }
-

@@ -73,6 +73,7 @@
 .contacts__item {
   display: flex;
   margin-bottom: 35px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -117,7 +118,7 @@
   .contacts__item {
     width: 300px;
   }
-  
+
   .contacts__separator {
     display: none;
   }
@@ -126,7 +127,7 @@
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
   }
-  
+
   .contacts__wrap--write {
     text-align: center;
   }
@@ -161,14 +162,11 @@
   .contacts__wrap--write {
     width: 410px;
     margin-left: 64px;
+    text-align: left;
   }
 
   .contacts__list {
     display: block;
-  }
-
-  .contacts__wrap--write {
-    text-align: left;
   }
 
   .contacts-headline {

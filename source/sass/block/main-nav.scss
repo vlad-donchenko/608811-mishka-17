@@ -6,12 +6,9 @@
 }
 
 .main-nav__delivery {
+  display: none;
   margin: 0 0 0 auto;
   width: 226px;
-}
-
-.main-nav__delivery {
-  display: none;
 }
 
 .main-nav__wrap {
@@ -47,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .main-nav__toggle {
     display: none;
   }

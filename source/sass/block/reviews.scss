@@ -41,6 +41,7 @@
   }
 
   .reviews__headline {
+    margin-bottom: 0;
     font-size: $base-font-size * 3 - 2px;
     order: -2;
   }
@@ -49,10 +50,6 @@
     order: -1;
     width: 175px;
     margin-left: auto;
-  }
-
-  .reviews__headline {
-    margin-bottom: 0;
   }
 
   .reviews__toggles {

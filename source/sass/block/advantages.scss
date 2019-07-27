@@ -15,6 +15,7 @@
 
 .advantages__item {
   margin-bottom: 30px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -29,6 +30,7 @@
 
   .advantages__item {
     width: 295px;
+
     &:nth-child(odd) {
       margin-right: 38px;
     }
@@ -36,9 +38,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item {
-    &:nth-child(odd) {
-      margin-right: 58px;
-    }
+  .advantages__item:nth-child(odd) {
+    margin-right: 58px;
   }
 }
