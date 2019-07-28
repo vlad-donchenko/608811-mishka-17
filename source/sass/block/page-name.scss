@@ -12,4 +12,12 @@
   font-weight: 700;
   line-height: $base-line-height + 6px;
   margin: 0;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-name__headline {
+    font-size: $base-font-size * 3 - 2px;
+    line-height: $base-line-height * 2 + 2px;
+  }
 }

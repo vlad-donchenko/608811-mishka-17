@@ -2,10 +2,31 @@
 @import "../global/mixins";
 
 .categories-menu__link {
+  display: block;
   color: #ffffff;
+  padding: 30px;
   font-size: $base-font-size + 5px;
   font-weight: 700;
   line-height: $base-line-height + 6px;
   background-color: $secondary-color;
   text-decoration: none;
+
+  &:focus {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.categories-menu__item:nth-child(even) .categories-menu__link {
+  background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .categories-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories-menu__item {
+    width: 50%;
+  }
 }

@@ -1,9 +1,77 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.reviews {
+  margin: 45px 0;
+}
+
 .reviews__headline {
   color: $black;
   font-size: $base-font-size + 10px;
   line-height: $base-line-height + 6px;
   font-weight: 700;
+  margin: 0 0 38px 0;
+}
+
+.reviews__wrap {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+.reviews__toggles {
+  margin-top: 36px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $mobile-large) {
+  .reviews__wrap {
+    max-width: 635px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reviews__headline {
+    margin-bottom: 0;
+    font-size: $base-font-size * 3 - 2px;
+    order: -2;
+  }
+
+  .reviews-write {
+    order: -1;
+    width: 175px;
+    margin-left: auto;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrap {
+    max-width: 1150px;
+  }
+
+  .customer__review {
+    width: 768px;
+  }
+
+  .reviews__headline {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

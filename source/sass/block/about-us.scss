@@ -2,8 +2,42 @@
 @import "../global/mixins";
 
 .about-us__headline {
+  margin: 0 0 31px 0;
   font-size: $base-font-size + 10px;
   color: $black;
   line-height: $base-line-height + 6px;
   font-weight: 700;
+}
+
+.about-us__wrap {
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $mobile-large) {
+  .about-us__wrap {
+    max-width: 635px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__wrap {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about-us__headline {
+    font-size: $base-font-size * 3 - 2px;
+    line-height: $base-line-height * 2 + 2px;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrap {
+    max-width: 1150px;
+  }
 }

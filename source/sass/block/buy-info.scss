@@ -1,11 +1,17 @@
 @import "../global/variables";
 @import "../global/mixins";
 
-.buy-info {
-  &__price {
-    font-size: $base-font-size + 2px;
-    color: $base-color;
-    line-height: $base-line-height;
-    font-weight: 700;
+.buy-info__price {
+  margin: 28px 0;
+  font-size: $base-font-size + 2px;
+  color: $base-color;
+  line-height: $base-line-height;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .buy-info {
+    width: 291px;
   }
 }

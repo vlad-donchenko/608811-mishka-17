@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header__wrap">
-    <nav class="main-nav">
+  <nav class="main-nav">
+    <div class="main-nav__container main-nav__container--menu">
       <div class="main-nav__logo-wrap">
         <a class="main-nav__logo">
           <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
@@ -17,30 +18,51 @@
       <button class="main-nav__toggle main-nav__toggle--open">
         Открыть меню
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
+      <ul class="main-nav__list buy-list">
+        <li class="buy-list__item buy-list__item--catalog">
+          <a href="#" class="buy-list__link">
             Каталог товаров
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
+        <li class="buy-list__item  buy-list__item--order">
+          <a href="#" class="buy-list__link">
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link site-list__link--search">
-            Поиск по сайту
+      </ul>
+      <ul class="main-nav__list action-list">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
+            Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link site-list__link--cart">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
             Корзина: пока пуста
           </a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+    <div class="main-nav__wrap main-nav__wrap--not-home">
+      <div class="main-nav__container main-nav__container--bottom">
+        <ul class="main-nav__list interesting-offers">
+          <li class="interesting-offers__item">
+            <a href="#" class="interesting-offers__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="interesting-offers__item">
+            <a href="#" class="interesting-offers__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <p class="main-nav__delivery">
+          Бесплатная доставка по России
+        </p>
+      </div>
+    </div>
+  </nav>
 </header>
 <main class="site-main">
   <section class="page-name">
@@ -52,96 +74,98 @@
     <h2 class="visually-hidden">
       Товары
     </h2>
-    <ul class="products__list">
-      <li class="products__item">
-        <article class="product">
-          <a href="#">
-            <img src="img/product-1" width="316" height="462" alt="Зайчик-попрыгайчик">
-          </a>
-          <div class="product__footer">
-            <h3 class="product__name">
-              <a href="#" class="product__link">
-                Зайчик-попрыгайчик
-              </a>
-            </h3>
-            <p class="product_characteristics">
-              Рост 30 см, вес 200 г
-            </p>
-            <div class="product__order order">
-              <p class="order__price">
-                1 200 руб.
+    <div class="products__wrapper">
+      <ul class="products__list">
+        <li class="products__item">
+          <article class="product">
+            <a href="#" class="product__image-wrap">
+              <img src="img/product-1" width="316" height="462" alt="Зайчик-попрыгайчик">
+            </a>
+            <div class="product__footer">
+              <h3 class="product__name">
+                <a href="#" class="product__link">
+                  Зайчик-попрыгайчик
+                </a>
+              </h3>
+              <p class="product_characteristics">
+                Рост 30 см, вес 200 г
               </p>
-              <p class="order__add">
-                <button type="button" class="button button--buy">
+              <div class="product__order order">
+                <p class="order__price">
+                  1 200 руб.
+                </p>
+                <p class="order__add">
+                  <button type="button" class="button button--order">
                   <span class="visually-hidden">
                     Купить
                   </span>
-                </button>
-              </p>
+                  </button>
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </li>
-      <li class="products__item">
-        <article class="product">
-          <a href="#">
-            <img src="img/product-2" width="316" height="462" alt="Зайчик-попрыгайчик">
-          </a>
-          <div class="product__footer">
-            <h3 class="product__name">
-              <a href="#" class="product__link">
-                Корзинка для белья
-              </a>
-            </h3>
-            <p class="product_characteristics">
-              Диаметр 15 см, высота 10 см
-            </p>
-            <div class="product__order order">
-              <p class="order__price">
-                690 руб.
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="product">
+            <a href="#" class="product__image-wrap">
+              <img src="img/product-2" width="316" height="462" alt="Зайчик-попрыгайчик">
+            </a>
+            <div class="product__footer">
+              <h3 class="product__name">
+                <a href="#" class="product__link">
+                  Корзинка для белья
+                </a>
+              </h3>
+              <p class="product_characteristics">
+                Диаметр 15 см, высота 10 см
               </p>
-              <p class="order__add">
-                <button type="button" class="button button--buy">
+              <div class="product__order order">
+                <p class="order__price">
+                  690 руб.
+                </p>
+                <p class="order__add">
+                  <button type="button" class="button button--order">
                   <span class="visually-hidden">
                     Купить
                   </span>
-                </button>
-              </p>
+                  </button>
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </li>
-      <li class="products__item">
-        <article class="product">
-          <a href="#">
-            <img src="img/product-3" width="316" height="462" alt="Зайчик-попрыгайчик">
-          </a>
-          <div class="product__footer">
-            <h3 class="product__name">
-              <a href="#" class="product__link">
-                Большая корзинка
-                для игрушек
-              </a>
-            </h3>
-            <p class="product_characteristics">
-              Диаметр 30 см, высота 30 см
-            </p>
-            <div class="product__order order">
-              <p class="order__price">
-                1 500 руб.
+          </article>
+        </li>
+        <li class="products__item">
+          <article class="product">
+            <a href="#" class="product__image-wrap">
+              <img src="img/product-3" width="316" height="462" alt="Зайчик-попрыгайчик">
+            </a>
+            <div class="product__footer">
+              <h3 class="product__name">
+                <a href="#" class="product__link">
+                  Большая корзинка
+                  для игрушек
+                </a>
+              </h3>
+              <p class="product_characteristics">
+                Диаметр 30 см, высота 30 см
               </p>
-              <p class="order__add">
-                <button type="button" class="button button--buy">
+              <div class="product__order order">
+                <p class="order__price">
+                  1 500 руб.
+                </p>
+                <p class="order__add">
+                  <button type="button" class="button button--order">
                   <span class="visually-hidden">
                     Купить
                   </span>
-                </button>
-              </p>
+                  </button>
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-      </li>
-    </ul>
+          </article>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="process-production">
     <div class="process-production-wrap">
@@ -150,17 +174,17 @@
           Процесс
           производства
         </h6>
-        <div class="video">
+        <div class="process-production__video video">
           <img src="img/process-video-1.jpg" width="260" height="150" alt="Процесс производства">
           <button class="button button--play">
             Запустить Видео
           </button>
         </div>
-        <div class="description-wrap">
-          <p class="description-wrap__text">
+        <div class="process-production__caption-wrap">
+          <p class="process-production__description">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <button type="button" class="button">
+          <button type="button" class="button button--process">
             СДелать заказ
           </button>
         </div>
@@ -170,6 +194,11 @@
 </main>
 <footer class="site-footer">
   <div class="site-footer__wrap">
+    <div class="site-footer__logo-wrap">
+      <a class="site-footer__logo-link">
+        <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
+      </a>
+    </div>
     <ul class="site-footer__list social">
       <li class="social__item">
         <a href="#" class="social__link">

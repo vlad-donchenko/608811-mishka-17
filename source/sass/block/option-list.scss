@@ -1,0 +1,40 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.option-list {
+  @include list-reset();
+}
+
+.option-list__label {
+  color: $black;
+  font-weight: 700;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height / 2 + 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .option-list {
+    flex-grow: 1;
+    margin-left: auto;
+  }
+
+  .option-list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .option-list__item--checkbox {
+    width: 50%;
+  }
+
+  .checkout__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option-list__item--checkbox {
+    width: 33.33%;
+  }
+}

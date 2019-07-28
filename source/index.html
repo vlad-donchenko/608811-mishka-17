@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header__wrap">
-    <nav class="main-nav">
+  <nav class="main-nav">
+    <div class="main-nav__container main-nav__container--menu">
       <div class="main-nav__logo-wrap">
         <a class="main-nav__logo">
           <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
@@ -17,42 +18,63 @@
       <button class="main-nav__toggle main-nav__toggle--open">
         Открыть меню
       </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
+      <ul class="main-nav__list buy-list">
+        <li class="buy-list__item buy-list__item--catalog">
+          <a href="#" class="buy-list__link">
             Каталог товаров
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">
+        <li class="buy-list__item  buy-list__item--order">
+          <a href="#" class="buy-list__link">
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link site-list__link--search">
-            Поиск по сайту
+      </ul>
+      <ul class="main-nav__list action-list">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
+            Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link site-list__link--cart">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
             Корзина: пока пуста
           </a>
         </li>
       </ul>
-    </nav>
-  </div>
+    </div>
+    <div class="main-nav__wrap">
+      <div class="main-nav__container main-nav__container--bottom">
+          <ul class="main-nav__list interesting-offers">
+            <li class="interesting-offers__item">
+              <a href="#" class="interesting-offers__link">
+                Новые поступления
+              </a>
+            </li>
+            <li class="interesting-offers__item">
+              <a href="#" class="interesting-offers__link">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <p class="main-nav__delivery">
+            Бесплатная доставка по России
+          </p>
+      </div>
+    </div>
+  </nav>
 </header>
 <main class="site-main">
   <h1 class="visually-hidden">
     Интернет магазин Мишка
   </h1>
   <section class="categories">
-    <div class="categories__wrap">
+    <div class="categories__container">
       <h2 class="visually-hidden">
         Категории
       </h2>
       <p class="categories__promo">
-        Милые штуки ручной
+        Милые штуки <br class="categories__separator"> ручной <br class="categories__separator">
         работы для дома
       </p>
       <ul class="categories__list categories-menu">
@@ -79,37 +101,37 @@
       <p class="product-week__clarification">
         ТОВАР НЕДЕЛИ
       </p>
-      <div class="popular-product">
-        <div class="popular-card__description specifications">
+      <div class="popular-product popular-product--single">
+        <div class="popular-product__description specifications">
           <p class="specifications__text">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <table class="specifications__list">
             <tbody>
-              <tr class="specifications__item">
-                <td>
-                  Цвет:
-                </td>
-                <td>
-                  «Тиффани»/серый
-                </td>
-              </tr>
-              <tr class="specifications__item">
-                <td>
-                  Диаметр:
-                </td>
-                <td>
-                  25 см
-                </td>
-              </tr>
-              <tr class="specifications__item">
-                <td>
-                  Высота:
-                </td>
-                <td>
-                  15 см
-                </td>
-              </tr>
+            <tr class="specifications__item">
+              <td>
+                Цвет:
+              </td>
+              <td>
+                «Тиффани»/серый
+              </td>
+            </tr>
+            <tr class="specifications__item">
+              <td>
+                Диаметр:
+              </td>
+              <td>
+                25 см
+              </td>
+            </tr>
+            <tr class="specifications__item">
+              <td>
+                Высота:
+              </td>
+              <td>
+                15 см
+              </td>
+            </tr>
             </tbody>
           </table>
         </div>
@@ -120,7 +142,7 @@
           <p class="buy-info__price">
             Цена: 990 руб.
           </p>
-          <button class="button">
+          <button class="button button--buy">
             ЗАКАЗАТЬ
           </button>
         </div>
@@ -135,36 +157,36 @@
       <ul class="about-us__list advantages">
         <li class="advantages__item">
           <p class="advantages__text">
-            Экологически
+            Экологически <br class="advantages__separator">
             чистые материалы
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Скандинавский стиль
+            Скандинавский стиль <br class="advantages__separator">
             по российской цене
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Увеличивает лайки
+            Увеличивает лайки <br class="advantages__separator">
             на фотографиях
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Связано вручную с
+            Связано вручную с <br class="advantages__separator">
             любовью и умилением
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Поддержка отечественного производителя
+            Поддержка отечественного <br class="advantages__separator"> производителя
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Поставляется в
+            Поставляется в <br class="advantages__separator">
             подарочной упаковке
           </p>
         </li>
@@ -176,7 +198,7 @@
       <h2 class="reviews__headline">
         Отзывы
       </h2>
-      <div class="slider">
+      <div class="slider slider--reviews">
         <ul class="slider__list customer">
           <li class="customer__item slider__item">
             <p class="customer__review">
@@ -210,54 +232,62 @@
         </div>
       </div>
       <div class="reviews-write">
-        <a href="#" class="button">
+        <a href="#" class="button button--reviews">
           Написать
         </a>
       </div>
     </div>
   </section>
   <section class="contacts">
-    <div class="contacts__wrap">
-      <h2 class="contacts-headline">
-        Контакты
-      </h2>
-      <div class="contacts__list">
-        <div class="contacts__item">
-          <div class="contacts__name">
-            e-mail:
+    <div class="contacts__index">
+      <div class="contacts__wrap contacts__wrap--info">
+        <h2 class="contacts-headline">
+          Контакты
+        </h2>
+        <div class="contacts__list">
+          <div class="contacts__item">
+            <div class="contacts__name">
+              e-mail:
+            </div>
+            <div class="contacts__content">
+              <a href="#" class="contacts__link">
+                info@mimimishkashop.ru
+              </a>
+            </div>
           </div>
-          <div class="contacts__content">
-            <a href="#" class="contacts__link">
-              info@mimimishkashop.ru
-            </a>
-          </div>
-        </div>
-        <div class="contacts__item">
-          <div class="contacts__name">
-            адрес:
-          </div>
-          <div class="contacts__content">
+          <div class="contacts__item">
+            <div class="contacts__name">
+              адрес:
+            </div>
+            <div class="contacts__content">
               <address class="contacts__address">
                 г. Санкт-Петербург,
-                ул. Большая Конюшенная,
+                ул. Большая<br class="contacts__separator">
+                Конюшенная, <br class="contacts__separator">
                 д. 19/8, офис 101
               </address>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="contacts__map">
-      <img src="img/map.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-    </div>
-    <div class="contacts__write">
-      <a href="#" class="button">
-        НАпишите нам
-      </a>
+      <div class="contacts__wrap contacts__wrap--map">
+        <img src="img/map.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+      </div>
+      <div class="contacts__wrap contacts__wrap--write">
+          <a href="#" class="button button--contacts">
+            НАпишите нам
+          </a>
+      </div>
     </div>
   </section>
 </main>
 <footer class="site-footer">
   <div class="site-footer__wrap">
+    <div class="site-footer__logo-wrap">
+      <a class="site-footer__logo-link">
+        <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
+      </a>
+    </div>
     <ul class="site-footer__list social">
       <li class="social__item">
         <a href="#" class="social__link">

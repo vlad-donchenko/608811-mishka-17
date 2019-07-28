@@ -1,2 +1,12 @@
 @import "../global/variables";
 @import "../global/mixins";
+
+.site-header {
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .site-header {
+    border-bottom: none;
+  }
+}

@@ -6,8 +6,72 @@
   font-size: $base-font-size * 2 - 3px;
   font-weight: 700;
   line-height: $base-line-height + 6px;
+  padding-top: 76px;
+  padding-bottom: 120px;
+  margin: 0;
+  text-align: center;
 }
 
 .categories__list {
   @include list-reset();
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.categories {
+  background-color: #fafafa;
+  background-image: url("../../img/hero-desktop@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories__container {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $mobile-large) {
+  .categories__container {
+    max-width: 575px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .categories__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .categories__container {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .categories__promo {
+    font-size: $base-font-size * 3 - 2px;
+    line-height: $base-line-height * 2 + 2px;
+    padding-top: 120px;
+    padding-bottom: 370px;
+  }
+
+  .categories__separator {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__container {
+    max-width: 1150px;
+  }
+
+  .categories__promo {
+    font-size: 53px;
+    line-height: 57px;
+    width: 605px;
+    margin: 0 auto;
+  }
 }

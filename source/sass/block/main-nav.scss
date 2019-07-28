@@ -4,3 +4,74 @@
 .main-nav__list {
   @include list-reset();
 }
+
+.main-nav__delivery {
+  display: none;
+  margin: 0 0 0 auto;
+  width: 226px;
+}
+
+.main-nav__wrap {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.main-nav__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-nav__container--bottom {
+  display: flex;
+}
+
+.main-nav__wrap--not-home {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $mobile-large) {
+  .main-nav__container {
+    max-width: 575px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__container--menu {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo-wrap {
+    width: 322px;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    width: 266px;
+  }
+
+  .main-nav__container {
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-wrap {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .main-nav__container {
+    max-width: 1150px;
+  }
+}

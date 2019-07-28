@@ -28,3 +28,9 @@
     color: rgba($black, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .customer__info {
+    width: 300px;
+  }
+}

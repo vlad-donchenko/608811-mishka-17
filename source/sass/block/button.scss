@@ -2,8 +2,11 @@
 @import "../global/mixins";
 
 .button {
+  display: inline-block;
+  padding: 14px 52px;
   background-color: transparent;
   color: $base-color;
+  text-align: center;
   font-size: $base-font-size + 2px;
   line-height: $base-line-height - 4px;
   text-transform: uppercase;
@@ -20,5 +23,34 @@
     background-color: $base-color;
     color: rgba(#ffffff, 0.3);
     outline: none;
+  }
+}
+
+.button--buy {
+  width: 100%;
+}
+
+.button--reviews {
+  width: 100%;
+}
+
+.button--contacts {
+  width: 100%;
+}
+
+.button--process {
+  width: 100%;
+  padding: 14px 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .button--reviews {
+    width: auto;
+    padding-left: 34px;
+    padding-right: 33px;
+  }
+
+  .button--contacts {
+    width: auto;
   }
 }

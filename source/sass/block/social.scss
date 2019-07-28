@@ -2,5 +2,8 @@
 @import "../global/mixins";
 
 .social {
+  display: flex;
+  flex-wrap: wrap;
+
   @include list-reset();
 }
