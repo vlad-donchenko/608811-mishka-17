@@ -10,6 +10,8 @@
 }
 
 .specifications__list {
+  width: 100%;
+  margin-top: 16px;
   border-spacing: 0;
   border: none;
   border-collapse: collapse;
@@ -17,6 +19,18 @@
 
 .specifications__item {
   border-bottom: 1px solid #ececec;
+}
+
+.specifications__data--left {
+  width: 37%;
+}
+
+.specifications__data--right {
+  width: 63%;
+}
+
+.specifications__data {
+  padding: 8px 0;
 }
 
 @media (min-width: $tablet-width) {

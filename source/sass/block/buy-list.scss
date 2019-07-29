@@ -2,6 +2,8 @@
 @import "../global/mixins";
 
 .buy-list__link {
+  display: block;
+  padding: 27px 58px 27px 76px;
   font-size: $base-font-size + 2px;
   color: $black;
   text-decoration: none;
@@ -15,6 +17,14 @@
   &:focus {
     color: rgba($black, 0.3);
   }
+}
+
+.buy-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.buy-list__link--order {
+  padding: 26px 58px 27px 76px;
 }
 
 @media (min-width: $tablet-width) {
