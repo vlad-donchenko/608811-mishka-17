@@ -8,62 +8,58 @@
 </head>
 <body>
 <header class="site-header">
-  <nav class="main-nav main-nav--no-js">
-    <div class="main-nav__container">
-      <div class="main-nav__top">
-        <div class="main-nav__logo-wrap">
-          <a class="main-nav__logo">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта">
+  <nav class="main-nav">
+    <div class="main-nav__container main-nav__container--menu">
+      <div class="main-nav__logo-wrap">
+        <a class="main-nav__logo">
+          <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
+        </a>
+      </div>
+      <button class="main-nav__toggle main-nav__toggle--open">
+        Открыть меню
+      </button>
+      <ul class="main-nav__list buy-list">
+        <li class="buy-list__item buy-list__item--catalog">
+          <a href="#" class="buy-list__link">
+            Каталог товаров
           </a>
-        </div>
-        <button class="main-nav__toggle" title="Главное меню">
-          <span class="main-nav__line"></span>
-        </button>
-      </div>
-      <div class="main-nav__middle">
-        <ul class="main-nav__list buy-list">
-          <li class="buy-list__item buy-list__item--catalog">
-            <a href="#" class=" buy-list__link">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="buy-list__item  buy-list__item--order">
-            <a href="#" class="buy-list__link buy-list__link--order">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list action-list">
-          <li class="action-list__item">
-            <a href="#" class="action-list__link action-list__link--search">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="action-list__item">
-            <a href="#" class="action-list__link action-list__link--cart">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="buy-list__item  buy-list__item--order">
+          <a href="#" class="buy-list__link">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__list action-list">
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="action-list__item">
+          <a href="#" class="action-list__link">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="main-nav__wrap">
+    <div class="main-nav__wrap main-nav__wrap--not-home">
       <div class="main-nav__container main-nav__container--bottom">
-          <ul class="main-nav__list interesting-offers">
-            <li class="interesting-offers__item">
-              <a href="#" class="interesting-offers__link">
-                Новые поступления
-              </a>
-            </li>
-            <li class="interesting-offers__item">
-              <a href="#" class="interesting-offers__link">
-                Распродажа
-              </a>
-            </li>
-          </ul>
-          <p class="main-nav__delivery">
-            Бесплатная доставка по России
-          </p>
+        <ul class="main-nav__list interesting-offers">
+          <li class="interesting-offers__item">
+            <a href="#" class="interesting-offers__link">
+              Новые поступления
+            </a>
+          </li>
+          <li class="interesting-offers__item">
+            <a href="#" class="interesting-offers__link">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <p class="main-nav__delivery">
+          Бесплатная доставка по России
+        </p>
       </div>
     </div>
   </nav>

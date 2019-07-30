@@ -3,7 +3,6 @@
 
 .action-list__link {
   display: block;
-  padding: 27px 58px 28px 76px;
   color: $black;
   font-size: $base-font-size + 2px;
   line-height: $base-line-height;
@@ -17,18 +16,6 @@
   &:focus {
     color: rgba($black, 0.3);
   }
-}
-
-.action-list__item {
-  border-bottom: 1px solid #ececec;
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.action-list__link--search {
-  padding: 27px 58px 28px 76px;
 }
 
 @media (min-width: $tablet-width) {
