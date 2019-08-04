@@ -3,15 +3,15 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
+@import "block/container.scss";
 @import "block/site-header.scss";
 @import "block/main-nav.scss";
 @import "block/categories.scss";
 @import "block/product-week.scss";
 @import "block/button.scss";
 @import "block/about-us.scss";
-@import "block/reviews.scss";
 @import "block/slider.scss";
-@import "block/customer.scss";
+@import "block/reviews.scss";
 @import "block/contacts.scss";
 @import "block/site-footer.scss";
 @import "block/social.scss";
@@ -26,6 +26,5 @@
 @import "block/product.scss";
 @import "block/video.scss";
 @import "block/option-list.scss";
-@import "block/container.scss";
 @import "block/logo.scss";
 @import "block/menu-list.scss";

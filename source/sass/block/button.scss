@@ -46,11 +46,23 @@
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;
-    padding-left: 34px;
-    padding-right: 33px;
+    margin-left: auto;
+    padding-left: 37px;
+    padding-right: 39px;
+    order: -1;
   }
 
   .button--contacts {
-    width: auto;
+    display: block;
+    width: 230px;
+    padding: 14px 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--reviews {
+    margin-top: 8px;
   }
 }
