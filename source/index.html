@@ -15,7 +15,8 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__img logo__img--header" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта">
+            <img class="logo__img logo__img--header" src="img/logo-mobile.svg" width="86" height="35"
+                 alt="Логотип сайта">
           </picture>
         </a>
       </div>
@@ -107,52 +108,50 @@
       <p class="product-week__clarification">
         Товар Недели
       </p>
-      <div class="popular-product popular-product--single">
-        <div class="popular-product__description specifications">
-          <p class="specifications__text">
+      <div class="product-week__item">
+        <div class="product-week__info-box">
+          <p class="product-week__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <table class="specifications__list">
-            <tbody>
-            <tr class="specifications__item">
-              <td class="specifications__data specifications__data--left">
+          <div class="product-week__list">
+            <dl class="product-week__term-wrap">
+              <dt class="product-week__term-name">
                 Цвет:
-              </td>
-              <td class="specifications__data specifications__data--right">
+              </dt>
+              <dd class="product-week__term-description">
                 «Тиффани»/серый
-              </td>
-            </tr>
-            <tr class="specifications__item">
-              <td class="specifications__data specifications__data--left">
+              </dd>
+            </dl>
+            <dl class="product-week__term-wrap">
+              <dt class="product-week__term-name">
                 Диаметр:
-              </td>
-              <td class="specifications__data specifications__data--right">
+              </dt>
+              <dd class="product-week__term-description">
                 25 см
-              </td>
-            </tr>
-            <tr class="specifications__item">
-              <td class="specifications__data specifications__data--left">
+              </dd>
+            </dl>
+            <dl class="product-week__term-wrap">
+              <dt class="product-week__term-name">
                 Высота:
-              </td>
-              <td class="specifications__data specifications__data--right">
+              </dt>
+              <dd class="product-week__term-description">
                 15 см
-              </td>
-            </tr>
-            </tbody>
-          </table>
+              </dd>
+            </dl>
+          </div>
         </div>
-        <div class="popular-product__image">
+        <div class="product-week__view">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            <img class="product-week__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
           </picture>
         </div>
-        <div class="popular-product__buy buy-info">
-          <p class="buy-info__price">
+        <div class="product-week__order">
+          <p class="product-week__price">
             Цена: 990 руб.
           </p>
-          <button type="button" class="button button--buy">
+          <button type="button" class="button button--product-week">
             Заказать
           </button>
         </div>
@@ -160,42 +159,42 @@
     </div>
   </section>
   <section class="about-us">
-    <div class="about-us__wrap">
+    <div class="about-us__inner container">
       <h2 class="about-us__headline">
         Коротко о нас:
       </h2>
-      <ul class="about-us__list advantages">
-        <li class="advantages__item">
-          <p class="advantages__text">
+      <ul class="about-us__list">
+        <li class="about-us__item about-us__item--first">
+          <p class="about-us__text about-us__text--first">
             Экологически
             чистые материалы
           </p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text">
+        <li class="about-us__item about-us__item--second">
+          <p class="about-us__text about-us__text--second">
             Скандинавский стиль
             по российской цене
           </p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text">
+        <li class="about-us__item about-us__item--third">
+          <p class="about-us__text about-us__text--third">
             Увеличивает лайки
             на фотографиях
           </p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text">
+        <li class="about-us__item about-us__item--fourth">
+          <p class="about-us__text about-us__text--fourth">
             Связано вручную с
             любовью и умилением
           </p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text">
+        <li class="about-us__item about-us__item--fifth">
+          <p class="about-us__text about-us__text--fifth">
             Поддержка отечественного производителя
           </p>
         </li>
-        <li class="advantages__item">
-          <p class="advantages__text">
+        <li class="about-us__item about-us__item--sixth">
+          <p class="about-us__text about-us__text--sixth">
             Поставляется в
             подарочной упаковке
           </p>
