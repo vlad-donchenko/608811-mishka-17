@@ -1,15 +1,20 @@
 @import "../global/variables";
 @import "../global/mixins";
 
-.interesting-offers {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .interesting-offers {
     display: flex;
-    flex-wrap: wrap;
-    width: 322px;
+    width: 405px;
+
+    @include list-reset();
+  }
+
+  .interesting-offers__item {
+    margin-right: 62px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .interesting-offers__link {

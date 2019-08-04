@@ -1,6 +1,10 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.categories-menu {
+  @include list-reset();
+}
+
 .categories-menu__link {
   display: block;
   padding: 24px 155px 31px 27px;

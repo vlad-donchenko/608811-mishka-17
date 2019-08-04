@@ -8,73 +8,77 @@
 </head>
 <body>
 <header class="site-header">
-  <nav class="main-nav">
-    <div class="main-nav__container main-nav__container--menu">
-      <div class="main-nav__logo-wrap">
-        <a class="main-nav__logo">
-          <img src="img/logo.svg" width="86" height="35" alt="Логотип сайта">
+  <div class="site-header__inner container">
+    <nav class="main-nav main-nav--closed  main-nav--no-js">
+      <div class="logo logo--header">
+        <a class="logo__link">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__img logo__img--header" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта">
+          </picture>
         </a>
       </div>
-      <button class="main-nav__toggle main-nav__toggle--open">
-        Открыть меню
+      <button type="button" class="main-nav__toggle" title="Открыть меню">
+        <span class="main-nav__line"></span>
+        <span class="main-nav__line"></span>
+        <span class="main-nav__line"></span>
       </button>
-      <ul class="main-nav__list buy-list">
-        <li class="buy-list__item buy-list__item--catalog">
-          <a href="#" class="buy-list__link">
+      <ul class="main-nav__first menu-list  menu-list--tablet-view">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link--catalog">
             Каталог товаров
           </a>
         </li>
-        <li class="buy-list__item  buy-list__item--order">
-          <a href="#" class="buy-list__link">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link--order">
             Вязание на заказ
           </a>
         </li>
       </ul>
-      <ul class="main-nav__list action-list">
-        <li class="action-list__item">
-          <a href="#" class="action-list__link">
-            Вязание на заказ
+      <ul class="main-nav__second menu-list">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link--search">
+            Поиск по сайту
           </a>
         </li>
-        <li class="action-list__item">
-          <a href="#" class="action-list__link">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link menu-list__link--cart">
             Корзина: пока пуста
           </a>
         </li>
       </ul>
-    </div>
-    <div class="main-nav__wrap main-nav__wrap--not-home">
-      <div class="main-nav__container main-nav__container--bottom">
-        <ul class="main-nav__list interesting-offers">
-          <li class="interesting-offers__item">
-            <a href="#" class="interesting-offers__link">
-              Новые поступления
-            </a>
-          </li>
-          <li class="interesting-offers__item">
-            <a href="#" class="interesting-offers__link">
-              Распродажа
-            </a>
-          </li>
-        </ul>
-        <p class="main-nav__delivery">
-          Бесплатная доставка по России
-        </p>
-      </div>
-    </div>
-  </nav>
+      <ul class="main-nav__third interesting-offers">
+        <li class="interesting-offers__item">
+          <a href="#" class="interesting-offers__link">
+            Новые поступления
+          </a>
+        </li>
+        <li class="interesting-offers__item">
+          <a href="#" class="interesting-offers__link">
+            Распродажа
+          </a>
+        </li>
+      </ul>
+      <p class="main-nav__delivery">
+        Бесплатная доставка по России
+      </p>
+    </nav>
+  </div>
 </header>
 <main class="site-main">
   <h1 class="visually-hidden">
     Интернет магазин Мишка
   </h1>
   <section class="categories">
-    <div class="categories__container">
+    <div class="categories__inner container">
       <h2 class="visually-hidden">
         Категории
       </h2>
       <p class="categories__promo">
-        Милые штуки <br class="categories__separator"> ручной <br class="categories__separator">
+        Милые штуки
+        ручной
+        <br class="categories__separator">
         работы для дома
       </p>
       <ul class="categories__list categories-menu">
@@ -99,7 +103,7 @@
         Вязаные корзинки
       </h2>
       <p class="product-week__clarification">
-        ТОВАР НЕДЕЛИ
+        Товар Недели
       </p>
       <div class="popular-product popular-product--single">
         <div class="popular-product__description specifications">
@@ -142,8 +146,8 @@
           <p class="buy-info__price">
             Цена: 990 руб.
           </p>
-          <button class="button button--buy">
-            ЗАКАЗАТЬ
+          <button type="button" class="button button--buy">
+            Заказать
           </button>
         </div>
       </div>
@@ -157,36 +161,36 @@
       <ul class="about-us__list advantages">
         <li class="advantages__item">
           <p class="advantages__text">
-            Экологически <br class="advantages__separator">
+            Экологически
             чистые материалы
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Скандинавский стиль <br class="advantages__separator">
+            Скандинавский стиль
             по российской цене
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Увеличивает лайки <br class="advantages__separator">
+            Увеличивает лайки
             на фотографиях
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Связано вручную с <br class="advantages__separator">
+            Связано вручную с
             любовью и умилением
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Поддержка отечественного <br class="advantages__separator"> производителя
+            Поддержка отечественного производителя
           </p>
         </li>
         <li class="advantages__item">
           <p class="advantages__text">
-            Поставляется в <br class="advantages__separator">
+            Поставляется в
             подарочной упаковке
           </p>
         </li>
@@ -211,20 +215,18 @@
                 Анастасия Красильникова
               </p>
               <p class="customer__login-wrap">
-                <a href="#" class="customer__login-link">
-                  @misssssiskras
-                </a>
+                @misssssiskras
               </p>
             </div>
           </li>
         </ul>
         <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--prev" type="button">
+          <button type="button" class="slider__toggle slider__toggle--prev">
           <span class="visually-hidden">
             Назад
           </span>
           </button>
-          <button class="slider__toggle slider__toggle--next" type="button">
+          <button type="button" class="slider__toggle slider__toggle--next">
           <span class="visually-hidden">
             Вперед
           </span>
@@ -250,7 +252,7 @@
               e-mail:
             </div>
             <div class="contacts__content">
-              <a href="#" class="contacts__link">
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__link">
                 info@mimimishkashop.ru
               </a>
             </div>
@@ -259,24 +261,23 @@
             <div class="contacts__name">
               адрес:
             </div>
-            <div class="contacts__content">
-              <address class="contacts__address">
-                г. Санкт-Петербург,
-                ул. Большая<br class="contacts__separator">
-                Конюшенная, <br class="contacts__separator">
-                д. 19/8, офис 101
-              </address>
-            </div>
+            <p class="contacts__address">
+              г. Санкт-Петербург,
+              ул. Большая<br class="contacts__separator">
+              Конюшенная, <br class="contacts__separator">
+              д. 19/8, офис 101
+            </p>
           </div>
         </div>
       </div>
       <div class="contacts__wrap contacts__wrap--map">
-        <img src="img/map.jpg" width="322" height="457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <img src="img/map.jpg" width="322" height="457"
+             alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
       </div>
       <div class="contacts__wrap contacts__wrap--write">
-          <a href="#" class="button button--contacts">
-            НАпишите нам
-          </a>
+        <a href="#" class="button button--contacts">
+          Напишите нам
+        </a>
       </div>
     </div>
   </section>
@@ -294,7 +295,6 @@
           <span class="visually-hidden">
             Инстаграм
           </span>
-          Инстаграм
         </a>
       </li>
       <li class="social__item">
@@ -302,7 +302,6 @@
           <span class="visually-hidden">
             Фейсбук
           </span>
-          Фейсбук
         </a>
       </li>
       <li class="social__item">
@@ -310,12 +309,11 @@
           <span class="visually-hidden">
             Твитер
           </span>
-          Твитер
         </a>
       </li>
     </ul>
     <p class="site-footer__developer">
-      <a href="#" class="site-footer__developer-link">
+      <a href="#" class="site-footer__developer-link" target="_blank">
         Разработано
         <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>

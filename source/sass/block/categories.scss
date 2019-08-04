@@ -1,21 +1,21 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.categories__inner {
+  padding-top: 70px;
+}
+
 .categories__promo {
   color: $black;
   font-size: $base-font-size * 2 - 3px;
   font-weight: 700;
   line-height: $base-line-height + 6px;
-  padding-top: 68px;
-  padding-bottom: 123px;
   margin: 0;
   text-align: center;
 }
 
-.categories__list {
-  @include list-reset();
-  margin-left: -30px;
-  margin-right: -30px;
+.categories__inner .categories__list {
+  margin: 123px -30px 0 -30px;
 }
 
 .categories {
@@ -26,29 +26,10 @@
   background-repeat: no-repeat;
 }
 
-.categories__container {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
-}
-
-@media (min-width: $mobile-large) {
-  .categories__container {
-    max-width: 575px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .categories__list {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .categories__container {
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .categories__promo {
@@ -64,10 +45,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .categories__container {
-    max-width: 1150px;
-  }
-
   .categories__promo {
     font-size: 53px;
     line-height: 57px;

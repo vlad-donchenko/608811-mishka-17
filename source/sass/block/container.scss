@@ -1,0 +1,23 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.container {
+  width: 100%;
+  max-width: 768px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1150px;
+  }
+}

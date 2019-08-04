@@ -14,21 +14,6 @@
   font-weight: 700;
 }
 
-.customer__login-link {
-  font-size: $base-font-size + 2px;
-  line-height: $base-line-height + 6px;
-  color: $base-color;
-  text-decoration: none;
-
-  &:hover {
-    color: rgba($black, 0.6);
-  }
-
-  &:focus {
-    color: rgba($black, 0.3);
-  }
-}
-
 @media (min-width: $tablet-width) {
   .customer__info {
     width: 300px;
