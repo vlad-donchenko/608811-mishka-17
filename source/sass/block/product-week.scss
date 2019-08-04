@@ -18,31 +18,11 @@
   margin: 6px 0;
 }
 
-.product-week__wrap {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 .product-week {
   padding: 27px 0;
 }
 
-@media (min-width: $mobile-large) {
-  .product-week__wrap {
-    max-width: 635px;
-  }
-}
-
 @media (min-width: $tablet-width) {
-  .product-week__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .popular-product--single {
     width: 100%;
   }
@@ -64,10 +44,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-week__wrap {
-    max-width: 1150px;
-  }
-
   .product-week__clarification {
     order: -1;
     margin-left: 0;
