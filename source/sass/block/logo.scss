@@ -3,6 +3,14 @@
 
 .logo__link {
   display: inline-block;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:focus {
+    opacity: 0.3;
+  }
 }
 
 .logo__img {

@@ -15,11 +15,11 @@
   font-weight: 700;
   border-top: 1px solid #ececec;
 
-  &:hover {
+  &[href]:hover {
     color: rgba($black, 0.6);
   }
 
-  &:focus {
+  &[href]:focus {
     color: rgba($black, 0.3);
   }
 }

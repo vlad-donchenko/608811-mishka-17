@@ -24,11 +24,11 @@
     line-height: $base-line-height;
     text-decoration: none;
 
-    &:hover {
+    &[href]:hover {
       color: rgba($black, 0.6);
     }
 
-    &:focus {
+    &[href]:focus {
       color: rgba($black, 0.3);
     }
   }

@@ -10,6 +10,10 @@
   display: none;
 }
 
+.contacts__separator--mobile {
+  display: block;
+}
+
 .contacts-headline {
   margin: 0 0 26px 0;
   font-size: $base-font-size + 3px;
@@ -145,27 +149,41 @@
 
 @media (min-width: $desktop-width) {
   .contacts__inner {
+    padding-left: 223px;
+  }
+
+  .contacts__info-block {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 175px;
   }
 
   .contacts__list {
     display: block;
     width: 310px;
+    padding-top: 176px;
+    padding-bottom: 100px;
   }
 
   .contacts-headline {
+    position: relative;
+    top: 127px;
+    margin-bottom: 0;
+    width: 100%;
     font-size: 53px;
     line-height: 57px;
   }
 
   .contacts__map {
-    margin: 0;
+    margin: 0 2px 0 auto;
     width: 525px;
   }
 
-  .contacts-headline {
-    width: 100%;
+  .contacts {
+    margin-top: 14px;
+  }
+
+  .contacts__img {
+    display: block;
   }
 }
