@@ -3,6 +3,15 @@
 
 .product {
   border: 1px solid #ececec;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__link {
@@ -22,27 +31,121 @@
 }
 
 .product_characteristics {
+  width: 100%;
+  margin: 0 0;
   font-size: $base-font-size - 2px;
   line-height: $base-line-height + 6px;
   color: $base-color;
 }
 
-.product__image-wrap {
+.product__view {
   display: block;
 }
 
-@media only screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+.product__img {
+  display: block;
+  width: 100%;
+}
+
+.product__name {
+  margin: 0 0 4px 0;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height;
+}
+
+.product__info-block {
+  padding: 29px 30px 28px 28px;
+}
+
+.product__price {
+  margin: 0;
+  color: $black;
+  line-height: $base-line-height;
+  font-weight: 700;
+  font-size: $base-font-size;
+}
+
+.product__buy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+  padding-top: 20px;
+  border-top: 1px solid #ececec;
+}
+
+@media only screen and (min-width: $tablet-width) and (max-width: 1149px) {
   .product {
     display: flex;
+  }
+
+  .product__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 334px);
+    padding: 25px 33px 28px 26px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .product__footer {
-    width: 335px;
+  .product__info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .product__image-wrap {
+  .product__name {
+    max-width: 240px;
+  }
+
+  .product__img {
+    max-width: 100%;
+  }
+
+  .product__view {
     width: 334px;
+  }
+
+  .product_characteristics {
+    font-size: $base-font-size;
+  }
+
+  .product__buy {
+    padding-top: 22px;
+  }
+
+  .product__link {
+    font-size: $base-font-size + 5px;
+  }
+
+  .product__price {
+    font-size: $base-font-size + 2px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__view {
+    width: 100%;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .product__info-block {
+    flex-grow: 1;
+    padding: 28px 30px 25px 26px;
+  }
+
+  .product__buy {
+    margin-top: 13px;
+    padding-top: 23px;
+  }
+
+  .product__price {
+    margin-left: 0;
   }
 }

@@ -20,4 +20,39 @@
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
   }
+
+  .page-name {
+    position: relative;
+    padding-top: 56px;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: -27px;
+      left: 0;
+      height: 37px;
+      display: block;
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-name__headline {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-name {
+    padding-top: 54px;
+    padding-bottom: 119px;
+
+    &::after {
+      bottom: 0;
+      height: 34px;
+    }
+  }
 }

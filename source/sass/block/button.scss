@@ -43,6 +43,41 @@
   padding: 14px 22px;
 }
 
+.button--product {
+  padding: 0;
+  border: none;
+  margin-left: auto;
+  margin-right: -4px;
+
+  path {
+    fill: #dbdbdb;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    path {
+      fill: #80dac8;
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+
+    path {
+      fill: rgba(#80dac8, 0.3);
+    }
+  }
+}
+
+.button--product svg {
+  display: block;
+}
+
+.button__cart {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;
@@ -59,6 +94,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .button--product {
+    margin-right: -2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -70,5 +109,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+
+  .button--product {
+    margin-right: 2px;
   }
 }
