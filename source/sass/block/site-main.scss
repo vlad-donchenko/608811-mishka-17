@@ -1,0 +1,19 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.site-main--catalog {
+  margin-bottom: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-main--catalog {
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-main--catalog {
+    margin-bottom: 111px;
+  }
+}
+
