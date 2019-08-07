@@ -2,6 +2,8 @@
 @import "../global/mixins";
 
 .checkout__title {
+  max-width: 95%;
+  margin: 0 0 20px 0;
   color: $base-color;
   font-size: $base-font-size - 2px;
   line-height: $base-line-height;
@@ -9,8 +11,7 @@
 }
 
 .checkout {
-  padding-top: 29px;
-  padding-bottom: 55px;
+  margin-top: 21px;
 }
 
 .checkout__list {
@@ -24,23 +25,29 @@
 }
 
 .checkout__legend {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
   color: $secondary-color;
   font-size: $base-font-size + 2px;
   font-weight: 700;
   text-transform: uppercase;
+
+  &::after {
+    content: " ";
+    display: block;
+    margin-left: 18px;
+    flex-grow: 1;
+    height: 1px;
+    border: 1px solid #62d1ba;
+  }
 }
 
-.checkout__wrap {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
+.checkout__item {
+  margin-bottom: 29px;
 
-@media (min-width: $mobile-large) {
-  .checkout__wrap {
-    max-width: 635px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -54,12 +61,6 @@
     &:nth-child(even) {
       background-color: #f1f1f1;
     }
-  }
-
-  .checkout__wrap {
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .checkout__fieldset {
@@ -89,12 +90,6 @@
 @media (min-width: $desktop-width) {
   .checkout {
     padding-top: 128px;
-  }
-
-  .checkout__wrap {
-    max-width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .checkout__legend {
