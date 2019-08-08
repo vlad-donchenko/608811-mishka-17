@@ -84,6 +84,12 @@
   padding: 14px 23px;
 }
 
+.button--checkout {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 43px;
+}
+
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;
@@ -112,6 +118,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .button--checkout {
+    width: auto;
+    padding: 14px 30px;
+    margin-top: 3px;
+    order: -1;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -132,7 +145,11 @@
   .button--video {
     display: inline-block;
     width: auto;
-    padding: 14px 43px;
+    padding: 14px 41px;
     margin-top: 45px;
+  }
+
+  .button--checkout {
+    margin-top: 0;
   }
 }

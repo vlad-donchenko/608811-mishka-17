@@ -51,13 +51,46 @@
   }
 }
 
+.checkout__item--text .checkout__legend {
+  margin-bottom: 24px;
+}
+
+.checkout__item--lass-label .checkout__legend {
+  margin-bottom: 1px;
+}
+
+.checkout__item--lass-label .customer__input {
+  font-size: $base-font-size + 4px;
+}
+
+.checkout__item--lass-label .checkout__fieldset {
+  margin-bottom: 31px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checkout__required-text {
+  margin: 11px 0;
+  font-size: $base-font-size - 1px;
+  line-height: $base-line-height / 2 +  4px;
+}
+
+.checkout__item--lass-label .customer__input--email {
+  font-size: $base-font-size + 2px;
+}
+
 @media (min-width: $tablet-width) {
   .checkout {
-    padding-top: 68px;
-    padding-bottom: 50px;
+    margin-top: 74px;
   }
 
   .checkout__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+
     &:nth-child(even) {
       background-color: #f1f1f1;
     }
@@ -68,7 +101,12 @@
   }
 
   .checkout__legend {
+    display: block;
     width: 165px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .checkout__send {
@@ -81,18 +119,76 @@
     order: -1;
   }
 
-  .checkout__item--lass-label {
-    padding-top: 0;
-    padding-bottom: 0;
+  .checkout__title {
+    font-size: $base-font-size + 2px;
+    line-height: $base-line-height + 6px;
+  }
+
+  .checkout__item--checkbox {
+    padding-top: 61px;
+    padding-bottom: 14px;
+  }
+
+  .checkout__item--text {
+    padding-top: 50px;
+  }
+
+  .checkout__item--text .checkout__legend {
+    padding-top: 14px;
+  }
+
+  .checkout__item--lass-label .checkout__legend {
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
+
+  .checkout__item--lass-label .checkout__fieldset {
+    margin-bottom: 24px;
+  }
+
+  .customer__input--email {
+    font-size: $base-font-size + 4px;
+  }
+
+  .checkout__item--lass-label .customer__input--email {
+    font-size: $base-font-size + 4px;
+  }
+
+  .checkout__item--textarea {
+    padding-top: 50px;
+  }
+
+  .checkout__required-text {
+    margin: 0;
+    font-size: $base-font-size + 2px;
+    line-height: $base-line-height + 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkout {
-    padding-top: 128px;
+    margin-top: 105px;
+  }
+
+  .checkout__inner {
+    padding-left: 110px;
   }
 
   .checkout__legend {
     width: 115px;
+  }
+
+  .checkout__title {
+    width: 690px;
+    margin-left: 114px;
+  }
+
+  .checkout__send {
+    max-width: 700px;
+    margin-left: 115px;
+  }
+
+  .checkout__required-text {
+    margin-top: -7px;
   }
 }

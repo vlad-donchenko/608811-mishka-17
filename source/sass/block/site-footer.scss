@@ -25,6 +25,7 @@
 
   &:focus {
     color: rgba($black, 0.3);
+
     path {
       fill: rgba(#46c1ae, 0.3);
     }
@@ -51,7 +52,6 @@
 
 @media (min-width: $tablet-width) {
   .site-footer {
-    margin-top: 19px;
     padding-top: 51px;
     padding-bottom: 50px;
   }
@@ -83,10 +83,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-footer {
-    margin-top: 66px;
-  }
-
   .site-footer__list {
     margin-left: 341px;
   }
