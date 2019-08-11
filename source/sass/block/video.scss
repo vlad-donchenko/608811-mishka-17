@@ -53,8 +53,11 @@
   left: 50%;
   top: 50%;
   display: block;
+  padding: 0;
   width: 101px;
   height: 77px;
+  background-color: transparent;
+  border: none;
   transform: translate(-50%, -50%);
   transition: all 0.2s;
 
@@ -86,7 +89,7 @@
   }
 
   .video__headline {
-    margin-top: 48px;
+    margin-top: 38px;
     padding-left: 72px;
     font-size: $base-font-size + 5px;
     line-height: $base-line-height;
@@ -128,9 +131,9 @@
   }
 
   .video__info-block {
-    width: 230px;
+    width: 240px;
     margin-left: auto;
-    margin-right: 61px;
+    margin-right: 49px;
   }
 
   .video__process {

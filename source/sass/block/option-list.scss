@@ -85,6 +85,14 @@
   margin-bottom: 21px;
 }
 
+.option-list__checkbox:focus + .option-list__label::before {
+  border-color: #62d1ba;
+}
+
+.option-list__radio:focus + .option-list__label::before {
+  border-color: #62d1ba;
+}
+
 @media (min-width: $tablet-width) {
   .option-list {
     width: calc(100% - 165px);

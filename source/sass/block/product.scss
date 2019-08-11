@@ -6,11 +6,15 @@
   transition: box-shadow 0.2s;
 
   &:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    .product__info-block {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    .product__info-block {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 

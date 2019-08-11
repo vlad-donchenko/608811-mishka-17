@@ -82,7 +82,7 @@
     padding-left: 35px;
   }
 
-  .menu-list__link {
+  .main-nav__second .menu-list__link {
     height: 88px;
   }
 }
@@ -90,5 +90,9 @@
 @media (min-width: $desktop-width) {
   .menu-list--tablet-view {
     margin-top: 0;
+  }
+
+  .menu-list .menu-list__link {
+    height: 88px;
   }
 }

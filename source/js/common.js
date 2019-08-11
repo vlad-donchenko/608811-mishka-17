@@ -12,3 +12,5 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--open');
   }
 });
+
+document.createElement( "picture" );

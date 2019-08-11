@@ -50,6 +50,7 @@
   min-width: 90px;
   color: $base-color;
   line-height: $base-line-height - 4px;
+  border-bottom: 1px solid #ececec;
 }
 
 .product-week__term-name,
@@ -60,20 +61,17 @@
 
 .product-week__term-wrap {
   display: flex;
-  margin: 0;
-  border-bottom: 1px solid #ececec;
+  flex-wrap: wrap;
+  margin: 0 0 28px 0;
 }
 
 .product-week__term-description {
-  flex-grow: 1;
+  width: calc(100% - 90px);
   padding-left: 7px;
   font-weight: 400;
   color: $base-color;
   line-height: $base-line-height - 4px;
-}
-
-.product-week__list {
-  margin-bottom: 28px;
+  border-bottom: 1px solid #ececec;
 }
 
 .product-week__price {
