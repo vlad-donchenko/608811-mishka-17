@@ -1,6 +1,10 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.about-us {
+  padding-top: 24px;
+}
+
 .about-us__headline {
   margin: 0 0 31px 0;
   font-size: $base-font-size + 10px;
@@ -9,35 +13,119 @@
   font-weight: 700;
 }
 
-.about-us__wrap {
-  max-width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
+.about-us__list {
+  @include list-reset();
 }
 
-@media (min-width: $mobile-large) {
-  .about-us__wrap {
-    max-width: 635px;
+.about-us__text {
+  padding-top: 55px;
+  margin: 0;
+  font-size: $base-font-size + 2px;
+  font-weight: 700;
+  line-height: $base-line-height - 4px;
+}
+
+.about-us__text--ecology {
+  max-width: 180px;
+}
+
+.about-us__text--style {
+  max-width: 210px;
+}
+
+.about-us__text--like {
+  max-width: 185px;
+}
+
+.about-us__text--handmade {
+  max-width: 215px;
+}
+
+.about-us__text--present {
+  max-width: 210px;
+}
+
+.about-us__item {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .about-us__wrap {
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
+  .about-us__list {
+    columns: 2;
+  }
+
+  .about-us__item {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 56px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-left: -7px;
+    }
+  }
+
+  .about-us__text--ecology {
+    max-width: 215px;
+  }
+
+  .about-us__text--handmade {
+    max-width: 250px;
+  }
+
+  .about-us__text {
+    font-size: $base-font-size + 5px;
+    line-height: $base-line-height - 2px;
   }
 
   .about-us__headline {
+    margin-left: -5px;
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
     margin-bottom: 46px;
   }
+
+  .about-us {
+    padding-top: 48px;
+  }
+
+  .about-us__text--style {
+    max-width: 245px;
+  }
+
+  .about-us__text--like {
+    max-width: 220px;
+  }
+
+  .about-us__text--present {
+    max-width: 245px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .about-us__wrap {
-    max-width: 1150px;
+  .about-us {
+    padding-top: 59px;
+  }
+
+  .about-us__headline {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    max-width: 685px;
+    margin-left: 175px;
+  }
+
+  .about-us__item:nth-child(n + 4) {
+    margin-left: 0;
   }
 }

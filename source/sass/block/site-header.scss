@@ -5,8 +5,43 @@
   border-bottom: 1px solid #ececec;
 }
 
+.site-header__inner {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .site-header {
     border-bottom: none;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 88px;
+      left: 0;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #ececec;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      min-height: 88px;
+      width: 100vw;
+      background-color: $white;
+      z-index: -1;
+    }
+  }
+
+  .site-header--not-home {
+    background-color: #f1f1f1;
   }
 }

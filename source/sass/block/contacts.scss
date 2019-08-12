@@ -2,10 +2,20 @@
 @import "../global/mixins";
 
 .contacts {
+  margin-top: 33px;
   padding-bottom: 39px;
 }
 
+.contacts__separator {
+  display: none;
+}
+
+.contacts__separator--mobile {
+  display: block;
+}
+
 .contacts-headline {
+  margin: 0 0 26px 0;
   font-size: $base-font-size + 3px;
   line-height: $base-line-height + 6px;
   font-weight: 700;
@@ -13,12 +23,16 @@
 }
 
 .contacts__map {
-  margin-top: 42px;
+  margin: 37px -30px 36px -30px;
+}
+
+.contacts__img {
+  width: 100%;
 }
 
 .contacts__name {
   width: 50px;
-  margin-right: 32px;
+  margin: 0 28px 0 0;
   font-size: $base-font-size;
   color: $base-color;
   line-height: $base-line-height + 6px;
@@ -56,23 +70,9 @@
   }
 }
 
-.contacts__address {
-  color: $base-color;
-  font-size: $base-font-size;
-  line-height: $base-line-height + 6px;
-  font-style: normal;
-}
-
-.contacts__wrap {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
-}
-
 .contacts__item {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
@@ -80,35 +80,23 @@
 }
 
 .contacts__content {
-  width: 180px;
+  margin: 0;
+  width: calc(100% - 80px);
 }
 
-.contacts__wrap--map {
-  padding-left: 0;
-  padding-right: 0;
-  margin-top: 42px;
-  margin-bottom: 39px;
+.contacts__content--address {
+  width: 150px;
+  margin: 0;
+  color: $base-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height + 6px;
+  font-style: normal;
 }
 
-@media (min-width: $mobile-large) {
-  .contacts__wrap {
-    max-width: 635px;
-  }
-}
 
 @media (min-width: $tablet-width) {
-  .contacts__wrap {
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .contacts__wrap--map {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+  .contacts {
+    margin-top: 59px;
   }
 
   .contacts__list {
@@ -117,60 +105,85 @@
 
   .contacts__item {
     width: 300px;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .contacts__separator {
-    display: none;
-  }
-
-  .contacts-headline {
-    font-size: $base-font-size * 3 - 2px;
-    line-height: $base-line-height * 2 + 2px;
-  }
-
-  .contacts__wrap--write {
-    text-align: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__wrap {
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .contacts__index {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .contacts__wrap--info {
-    width: 410px;
-    margin-left: 64px;
-  }
-
-  .contacts__wrap--map {
-    width: 525px;
-  }
-
-  .contacts__wrap--write {
-    width: 410px;
-    margin-left: 64px;
-    text-align: left;
-  }
-
-  .contacts__list {
     display: block;
   }
 
   .contacts-headline {
+    margin-bottom: 49px;
+    margin-left: -5px;
+    font-size: $base-font-size * 3 - 2px;
+    line-height: $base-line-height * 2 + 2px;
+  }
+
+  .contacts__name {
+    width: 60px;
+    margin-right: 17px;
+    font-size: $base-font-size + 2px;
+  }
+
+
+  .contacts__link {
+    font-size: $base-font-size + 2px;
+  }
+
+  .contacts__content {
+    width: calc(100% - 77px);
+  }
+
+  .contacts__content--address {
+    font-size: $base-font-size + 2px;
+  }
+
+  .contacts__map {
+    margin: 57px -50px 48px -50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__inner {
+    padding-left: 223px;
+  }
+
+  .contacts__info-block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__list {
+    display: block;
+    width: 310px;
+    padding-top: 176px;
+    padding-bottom: 100px;
+  }
+
+  .contacts-headline {
+    position: relative;
+    top: 127px;
+    margin-bottom: 0;
+    width: 100%;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .contacts__map {
+    margin: 0 2px 0 auto;
+    width: 525px;
+  }
+
+  .contacts {
+    margin-top: 14px;
+  }
+
+  .contacts__img {
+    display: block;
   }
 }

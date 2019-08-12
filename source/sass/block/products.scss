@@ -1,15 +1,12 @@
 @import "../global/variables";
 @import "../global/mixins";
 
-.products__list {
-  @include list-reset();
+.products__inner {
+  padding-top: 28px;
 }
 
-.products__wrapper {
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 30px auto 0 auto;
+.products__list {
+  @include list-reset();
 }
 
 .products__item {
@@ -20,22 +17,13 @@
   }
 }
 
-@media (min-width: $mobile-large) {
-  .products__wrapper {
-    max-width: 635px;
-  }
-}
-
 @media (min-width: $tablet-width) {
-  .products__wrapper {
-    max-width: 768px;
-    margin: 67px auto 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+  .products__item {
+    margin-bottom: 52px;
   }
 
-  .products__item {
-    margin-bottom: 54px;
+  .products__inner {
+    padding-top: 81px;
   }
 }
 
@@ -45,17 +33,22 @@
     flex-wrap: wrap;
   }
 
-  .products__wrapper {
-    max-width: 1150px;
-    margin: 111px auto 0 auto;
+  .products__inner {
+    padding-top: 112px;
   }
 
   .products__item {
+    display: flex;
     width: 316px;
     margin-right: 51px;
+    margin-bottom: 0;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 51px;
     }
   }
 }

@@ -1,12 +1,32 @@
 @import "../global/variables";
 @import "../global/mixins";
 
+.product-week__inner {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 45px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 319px 100%;
+    transform: rotate(180deg);
+  }
+}
+
 .product-week__promo {
   font-size: $base-font-size + 10px;
   font-weight: 700;
   line-height: $base-line-height + 6px;
   color: $black;
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .product-week__clarification {
@@ -15,32 +35,72 @@
   line-height: $base-line-height - 4px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
-.product-week__wrap {
+.product-week__description {
+  margin: 0 0 18px 0;
+  color: $base-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+}
+
+.product-week__term-name {
+  min-width: 90px;
+  color: $base-color;
+  line-height: $base-line-height - 4px;
+  border-bottom: 1px solid #ececec;
+}
+
+.product-week__term-name,
+.product-week__term-description {
+  margin: 0;
+  padding: 9.5px 0;
+}
+
+.product-week__term-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 28px 0;
+}
+
+.product-week__term-description {
+  width: calc(100% - 90px);
+  padding-left: 7px;
+  font-weight: 400;
+  color: $base-color;
+  line-height: $base-line-height - 4px;
+  border-bottom: 1px solid #ececec;
+}
+
+.product-week__price {
+  margin: 0 0 26px 0;
+  text-align: center;
+  color: $base-color;
+  font-weight: 700;
+  font-size: $base-font-size + 2px;
+  line-height: $base-line-height;
+}
+
+.product-week__order {
+  margin-top: 19px;
+}
+
+.product-week__img {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 30px;
 }
 
-.product-week {
-  padding: 34px 0;
-}
-
-@media (min-width: $mobile-large) {
-  .product-week__wrap {
-    max-width: 635px;
-  }
+.product-week__item {
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .product-week__wrap {
+  .product-week__inner {
     display: flex;
     flex-wrap: wrap;
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 47px;
+    padding-bottom: 70px;
   }
 
   .popular-product--single {
@@ -48,39 +108,132 @@
   }
 
   .product-week__promo {
+    width: 430px;
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
-  }
-
-  .product-week {
-    padding: 43px 0;
+    margin-bottom: 0;
   }
 
   .product-week__clarification {
     width: 75px;
-    text-align: center;
+    padding-top: 6px;
     margin-left: auto;
+    margin-right: 26px;
+    font-size: $base-font-size + 2px;
+    line-height: $base-line-height - 7px;
+    text-align: center;
+  }
+
+  .product-week__description {
+    margin: 0 0 36px 0;
+    font-size: $base-font-size + 2px;
+    line-height: $base-line-height + 6px;
+  }
+
+  .product-week__info-box {
+    width: 291px;
+    margin-top: 0;
+    padding-bottom: 138px;
+  }
+
+  .product-week__view {
+    width: 333px;
+    margin-left: auto;
+    padding-top: 8px;
+  }
+
+  .product-week__order {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 291px;
+  }
+
+  .product-week__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 47px;
+    width: 100%;
+  }
+
+  .product-week__img {
+    display: block;
+    width: auto;
+  }
+
+  .product-week__price {
+    margin: 0 0 35px 0;
+    font-size: $base-font-size + 5px;
+  }
+
+  .product-week__inner::after {
+    height: 17px;
+    background-size: 772px 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .product-week__wrap {
-    max-width: 1150px;
-  }
-
   .product-week__clarification {
+    position: relative;
+    top: 79px;
     order: -1;
-    margin-left: 0;
-    margin-right: 58px;
+    margin-left: 45px;
+    margin-right: 50px;
+    z-index: 1;
+    padding-top: 9px;
   }
 
   .product-week__promo {
+    position: relative;
+    top: 79px;
+    width: 535px;
     font-size: 53px;
     line-height: 57px;
     margin: 0;
+    z-index: 1;
   }
 
-  .product-week {
-    padding: 54px 0;
+
+  .product-week__view {
+    width: 525px;
+  }
+
+  .product-week__info-box {
+    margin-left: 175px;
+    margin-top: 166px;
+  }
+
+  .product-week__order {
+    left: 175px;
+  }
+
+  .product-week__item {
+    margin-top: -39px;
+  }
+
+  .product-week__description {
+    margin-bottom: 49px;
+  }
+
+  .product-week__inner {
+    padding-bottom: 96px;
+  }
+
+  .product-week__inner::after {
+    bottom: 1px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: center;
+  }
+
+  .product-week__term-name,
+  .product-week__term-description {
+    padding: 7px 0 12px 0;
+  }
+
+  .product-week__term-description {
+    padding-left: 7px;
   }
 }

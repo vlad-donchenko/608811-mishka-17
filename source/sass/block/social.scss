@@ -4,6 +4,31 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   @include list-reset();
+}
+
+.social__link {
+  display: block;
+
+  &:hover {
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:focus {
+    path {
+      fill: rgba(#46c1ae, 0.3);
+    }
+  }
+}
+
+.social__item {
+  margin-right: 41px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
