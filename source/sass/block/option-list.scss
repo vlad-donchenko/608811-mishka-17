@@ -86,11 +86,11 @@
 }
 
 .option-list__checkbox:focus + .option-list__label::before {
-  border-color: #62d1ba;
+  border-color: rgba(#444444, 0.3);
 }
 
 .option-list__radio:focus + .option-list__label::before {
-  border-color: #62d1ba;
+  border-color: rgba(#444444, 0.3);
 }
 
 @media (min-width: $tablet-width) {
