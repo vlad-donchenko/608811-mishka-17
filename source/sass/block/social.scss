@@ -11,17 +11,14 @@
 
 .social__link {
   display: block;
+  color: #231f20;
 
   &:hover {
-    path {
-      fill: #46c1ae;
-    }
+    color: #46c1ae;
   }
 
   &:focus {
-    path {
-      fill: rgba(#46c1ae, 0.3);
-    }
+    color: rgba(#46c1ae, 0.3);
   }
 }
 

@@ -34,7 +34,13 @@
   @include list-reset();
 }
 
+.categories__item {
+  position: relative;
+}
+
 .categories__link {
+  position: relative;
+  bottom: 0;
   display: block;
   min-height: 103px;
   padding: 24px 155px 31px 27px;
@@ -44,7 +50,15 @@
   line-height: $base-line-height;
   background-color: #63d1bb;
   text-decoration: none;
-  transition: all 0.2s ease;
+
+  &:hover {
+    padding: 24px 332px 35px 37px;
+  }
+
+  &:focus {
+    padding: 24px 332px 35px 37px;
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .categories__item:nth-child(even) .categories__link {
