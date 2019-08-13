@@ -133,6 +133,14 @@
   }
 }
 
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews__inner {
+    &::before {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .customer__review {
     width: 768px;
