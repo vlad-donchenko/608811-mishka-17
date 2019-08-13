@@ -55,6 +55,44 @@
   line-height: $base-line-height;
   background-color: #63d1bb;
   text-decoration: none;
+  z-index: 1;
+  transition: 0.3s;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #63d1bb;
+    z-index: -1;
+    transition: bottom 0.3s;
+  }
+
+  &:focus,
+  &:hover {
+    padding-top: 19px;
+    padding-bottom: 38px;
+
+    &::before {
+      height: 100%;
+      bottom: 5px;
+    }
+  }
+
+  &:focus {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.categories__item:nth-child(even) .categories__link {
+  &:focus,
+  &:hover {
+    &::before {
+      background-color: #56c3b2;
+    }
+  }
 }
 
 .categories__item:nth-child(even) .categories__link {
@@ -116,6 +154,7 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: 770px;
+    z-index: 2;
   }
 }
 
