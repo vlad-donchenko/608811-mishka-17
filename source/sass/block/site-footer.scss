@@ -7,6 +7,10 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.site-footer__developer-logo {
+  fill: #63d1bb;
+}
+
 .site-footer__developer-link {
   display: flex;
   align-items: center;
@@ -18,7 +22,7 @@
   text-decoration: none;
 
   &:hover {
-    path {
+    .site-footer__developer-logo {
       fill: #46c1ae;
     }
   }
@@ -26,7 +30,7 @@
   &:focus {
     color: rgba($black, 0.3);
 
-    path {
+    .site-footer__developer-logo {
       fill: rgba(#46c1ae, 0.3);
     }
   }
@@ -79,6 +83,24 @@
 
   .site-footer__logo-link {
     display: block;
+    color: #322f30;
+  }
+
+  .site-footer__logo-link[href] {
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:focus {
+      color: #46c1ae;
+      opacity: 0.3;
+    }
+  }
+
+
+  .site-footer__img {
+    width: 102px;
+    height: 34px;
   }
 }
 

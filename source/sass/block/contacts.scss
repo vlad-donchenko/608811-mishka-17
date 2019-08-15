@@ -117,10 +117,21 @@
   }
 
   .contacts-headline {
+    position: relative;
     margin-bottom: 49px;
     margin-left: -5px;
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      right: 3px;
+      top: -14px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   .contacts__name {
@@ -166,12 +177,17 @@
   }
 
   .contacts-headline {
-    position: relative;
     top: 127px;
     margin-bottom: 0;
     width: 100%;
     font-size: 53px;
     line-height: 57px;
+
+    &:after {
+      right: initial;
+      left: -106px;
+      top: -8px;
+    }
   }
 
   .contacts__map {

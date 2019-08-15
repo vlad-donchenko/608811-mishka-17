@@ -74,6 +74,21 @@
   left: 4px;
 }
 
+.about-us__icon--heart {
+  top: 7px;
+  left: 7px;
+}
+
+.about-us__icon--rocket {
+  top: 5px;
+  left: -6px;
+}
+
+.about-us__icon--present {
+  top: 2px;
+  left: 4px;
+}
+
 @media (min-width: $tablet-width) {
   .about-us__list {
     columns: 2;

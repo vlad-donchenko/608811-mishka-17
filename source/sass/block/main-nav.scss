@@ -74,12 +74,22 @@
     display: block;
   }
 
+  .main-nav--open .menu-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
   .main-nav--open .main-nav__first {
     display: block;
+    top: 100%;
   }
 
   .main-nav--open .main-nav__second {
     display: block;
+    top: calc(100% + 158px);
   }
 
   .main-nav--open .main-nav__toggle {

@@ -3,9 +3,23 @@
 
 .menu-list {
   @include list-reset();
+  background-color: #ffffff;
+}
+
+.menu-list__icon {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.menu-list__icon--search {
+  top: 31px;
+  left: 32px;
 }
 
 .menu-list__link {
+  position: relative;
   display: block;
   padding: 27px 50px 27px 76px;
   font-size: $base-font-size + 2px;
@@ -22,9 +36,27 @@
   &[href]:focus {
     color: rgba($black, 0.3);
   }
+
+  &:hover {
+    .menu-list__icon {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    .menu-list__icon {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .menu-list--tablet-view {
+    background-color: transparent;
+  }
+
   .menu-list__link {
     padding: 32px 31px 32px 33px;
     border-top: none;
@@ -45,6 +77,15 @@
   .menu-list__link--cart {
     padding-left: 82px;
     padding-right: 0;
+  }
+
+  .menu-list__icon--search {
+    top: 36px;
+  }
+
+  .menu-list__icon--cart {
+    top: 35px;
+    left: 31px;
   }
 }
 
