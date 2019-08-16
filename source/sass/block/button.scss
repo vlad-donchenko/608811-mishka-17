@@ -90,6 +90,24 @@
   padding: 14px 43px;
 }
 
+.button--size {
+  width: 100%;
+  margin-top: 31px;
+
+
+  &:hover {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .button--reviews {
     width: auto;

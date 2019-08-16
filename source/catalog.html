@@ -195,7 +195,7 @@
                 <p class="product__price">
                   1 200 руб.
                 </p>
-                <a href="size.html" class="button button--product" title="Купить">
+                <a href="size.html" class="button button--product button--modal" title="Купить">
                   <svg width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -231,7 +231,7 @@
                 <p class="product__price">
                   690 руб.
                 </p>
-                <a href="size.html" class="button button--product" title="Купить">
+                <a href="size.html" class="button button--product button--modal" title="Купить">
                   <svg width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -268,7 +268,7 @@
                 <p class="product__price">
                   1 500 руб.
                 </p>
-                <a href="size.html" class="button button--product" title="Купить">
+                <a href="size.html" class="button button--product button--modal" title="Купить">
                   <svg width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -368,6 +368,41 @@
     </p>
   </div>
 </footer>
+<section class="modal">
+  <h2 class="modal__headline">
+    Добавить
+    в корзину
+  </h2>
+  <p class="modal__description">
+    Выберите размер:
+  </p>
+  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+    <ul class="modal__list">
+      <li class="modal__item">
+        <input class="modal__checkbox visually-hidden" type="radio" name="size" value="s" id="size-s" checked>
+        <label for="size-s" class="modal__label">
+          S
+        </label>
+      </li>
+      <li class="modal__item">
+        <input class="modal__checkbox visually-hidden" type="radio" name="size" value="m" id="size-m">
+        <label for="size-m" class="modal__label">
+          M
+        </label>
+      </li>
+      <li class="modal__item">
+        <input class="modal__checkbox visually-hidden" type="radio" name="size" value="l" id="size-l">
+        <label for="size-l" class="modal__label">
+          L
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="button button--size">
+      Добавить
+    </button>
+  </form>
+</section>
+<div class="overlay"></div>
 <script src="js/picture-fill.min.js"></script>
 <script src="js/common.js"></script>
 </body>
