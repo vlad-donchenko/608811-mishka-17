@@ -24,6 +24,7 @@
   font-size: $base-font-size + 2px;
   font-weight: 700;
   line-height: $base-line-height - 4px;
+  overflow: hidden;
 }
 
 .about-us__text--ecology {
@@ -63,30 +64,42 @@
 .about-us__icon--ecology {
   left: 8px;
   top: 0;
+  width: 32px;
+  height: 37px;
 }
 
 .about-us__icon--style {
   top: 1px;
+  width: 47px;
+  height: 27px;
 }
 
 .about-us__icon--handmade {
   top: 3px;
   left: 4px;
+  width: 34px;
+  height: 34px;
 }
 
 .about-us__icon--heart {
   top: 7px;
   left: 7px;
+  width: 34px;
+  height: 27px;
 }
 
 .about-us__icon--rocket {
   top: 5px;
   left: -6px;
+  width: 55px;
+  height: 23px;
 }
 
 .about-us__icon--present {
   top: 2px;
   left: 4px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: $tablet-width) {

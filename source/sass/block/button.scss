@@ -50,6 +50,7 @@
   margin-right: -4px;
   background-color: transparent;
   opacity: 0.2;
+  overflow: hidden;
 
   &:hover {
     background-color: transparent;
@@ -72,6 +73,8 @@
 
 .button--product svg {
   display: block;
+  width: 21px;
+  height: 18px;
 }
 
 .button__cart {
