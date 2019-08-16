@@ -137,7 +137,7 @@
     font-size: $base-font-size * 3 - 2px;
     line-height: $base-line-height * 2 + 2px;
 
-    &:after {
+    &::after {
       content: " ";
       position: absolute;
       right: 3px;
@@ -197,7 +197,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    &:after {
+    &::after {
       right: initial;
       left: -106px;
       top: -8px;

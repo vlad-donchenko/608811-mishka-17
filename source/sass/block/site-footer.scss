@@ -8,6 +8,7 @@
 }
 
 .site-footer__developer-logo {
+  margin-left: 30px;
   fill: #63d1bb;
 }
 
@@ -48,10 +49,6 @@
 
 .site-footer__logo-wrap {
   display: none;
-}
-
-.site-footer__developer-logo {
-  margin-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
