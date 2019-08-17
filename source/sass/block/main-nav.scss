@@ -111,6 +111,10 @@
       top: -6px;
     }
   }
+
+  .main-nav--open .menu-list__link--cart {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 @media (min-width: $tablet-width) {
