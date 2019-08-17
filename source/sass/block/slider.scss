@@ -23,3 +23,9 @@
 .slider__toggles {
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    border: none;
+  }
+}

@@ -48,30 +48,33 @@
   border: none;
   margin-left: auto;
   margin-right: -4px;
-
-  path {
-    fill: #dbdbdb;
-  }
+  background-color: transparent;
+  opacity: 0.2;
+  overflow: hidden;
 
   &:hover {
     background-color: transparent;
+    opacity: 1;
 
-    path {
-      fill: #80dac8;
+    svg {
+      fill: #65d2bc;
     }
   }
 
   &:focus {
     background-color: transparent;
+    opacity: 0.3;
 
-    path {
-      fill: rgba(#80dac8, 0.3);
+    svg {
+      fill: #65d2bc;
     }
   }
 }
 
 .button--product svg {
   display: block;
+  width: 21px;
+  height: 18px;
 }
 
 .button__cart {
@@ -88,6 +91,24 @@
   width: 100%;
   margin-top: 20px;
   padding: 14px 43px;
+}
+
+.button--size {
+  width: 100%;
+  margin-top: 31px;
+
+
+  &:hover {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

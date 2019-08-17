@@ -68,6 +68,20 @@
   font-size: $base-font-size + 2px;
 }
 
+.slider__toggle {
+  &:hover {
+    .reviews__arrow {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    .reviews__arrow {
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .reviews__headline {
     width: 320px;

@@ -4,6 +4,7 @@
 .categories {
   position: relative;
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 .categories__promo {
@@ -21,6 +22,7 @@
 }
 
 .categories__inner--background {
+  min-height: 283px;
   padding-top: 70px;
   padding-bottom: 123px;
   background-color: #fafafa;
@@ -39,8 +41,20 @@
   @include list-reset();
 }
 
-.categories__item {
-  position: relative;
+.categories__icon {
+  position: absolute;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.categories__icon--toy {
+  top: 20px;
+  right: 26px;
+}
+
+.categories__icon--interior {
+  top: 23px;
+  right: 36px;
 }
 
 .categories__link {
@@ -53,48 +67,40 @@
   font-size: $base-font-size + 4px;
   font-weight: 700;
   line-height: $base-line-height;
-  background-color: #63d1bb;
   text-decoration: none;
-  z-index: 1;
-  transition: 0.3s;
-
-  &:before {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #63d1bb;
-    z-index: -1;
-    transition: bottom 0.3s;
-  }
+  z-index: 2;
+  transition: all 0.3s;
 
   &:focus,
   &:hover {
-    padding-top: 19px;
-    padding-bottom: 36px;
+    transform: translateY(-5px);
 
-    &::before {
-      height: 100%;
-      bottom: 5px;
+    .categories__icon {
+      opacity: 0.7;
     }
   }
 
   &:focus {
     color: rgba(#ffffff, 0.3);
+
+    .categories__icon {
+      opacity: 0.3;
+    }
   }
 }
 
-.categories__item:nth-child(even) .categories__link {
-  background-color: #56c3b2;
+.categories__item {
+  position: relative;
+}
 
-  &:focus,
-  &:hover {
-    &::before {
-      background-color: #56c3b2;
-    }
-  }
+.categories__item--interior,
+.categories__link--interior {
+  background-color: #63d1bb;
+}
+
+.categories__item--toy,
+.categories__link--toy {
+  background-color: #56c3b2;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,11 +119,6 @@
     padding: 27px 150px 30px 37px;
     font-size: $base-font-size + 5px;
     line-height: $base-line-height + 6px;
-
-    &:focus,
-    &:hover {
-      padding-bottom: 38px;
-    }
   }
 
   .categories__promo {
@@ -158,6 +159,15 @@
     background-repeat: repeat-x;
     background-size: 770px;
     z-index: 2;
+  }
+
+  .categories__icon--interior {
+    top: 31px;
+  }
+
+  .categories__icon--toy {
+    top: 31px;
+    right: 33px;
   }
 }
 

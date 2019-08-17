@@ -9,13 +9,30 @@
   color: $black;
 }
 
+.customer-info__icon {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.customer-info__icon--mail {
+  top: 11px;
+  right: -1px;
+  width: 42px;
+  height: 32px;
+}
+
+.customer-info__icon--phone {
+  right: 7px;
+  top: 11px;
+}
+
 .customer__input {
   width: 100%;
   padding-right: 45px;
   height: 51px;
   border: none;
   font-size: $base-font-size + 2px;
-  color: $black;
+  color: $base-color;
   background-color: transparent;
   border-bottom: 2px solid $black;
 
@@ -27,6 +44,16 @@
     outline: none;
     border-bottom-color: #62d1ba;
   }
+}
+
+.customer__input:hover + .customer-info__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.customer__input:focus + .customer-info__icon {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .customer__input::placeholder {
@@ -48,26 +75,6 @@
     top: 11px;
     display: block;
     opacity: 0.3;
-  }
-}
-
-.customer-info__item--phone {
-  &::after {
-    right: 9px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/icon-phone.svg");
-    background-size: contain;
-  }
-}
-
-.customer-info__item--mail {
-  &::after {
-    right: 4px;
-    width: 32px;
-    height: 32px;
-    background-image: url("../img/icon-mail.svg");
-    background-size: contain;
   }
 }
 
@@ -126,16 +133,12 @@
     padding-top: 14px;
   }
 
-  .customer-info__item--phone {
-    &::after {
-      right: 26px;
-    }
+  .customer-info__icon--mail {
+    right: 17px;
   }
 
-  .customer-info__item--mail {
-    &::after {
-      right: 22px;
-    }
+  .customer-info__icon--phone {
+    right: 26px;
   }
 }
 
@@ -148,15 +151,11 @@
     padding-right: 45px;
   }
 
-  .customer-info__item--phone {
-    &::after {
-      right: 8px;
-    }
+  .customer-info__icon--phone {
+    right: 7px;
   }
 
-  .customer-info__item--mail {
-    &::after {
-      right: 4px;
-    }
+  .customer-info__icon--mail {
+    right: -1px;
   }
 }

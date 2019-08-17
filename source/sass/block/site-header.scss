@@ -15,7 +15,7 @@
     background-color: #fafafa;
     position: relative;
     z-index: 1;
-    overflow-x: hidden;
+    overflow: hidden;
 
     &::before {
       content: " ";
