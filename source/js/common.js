@@ -32,20 +32,22 @@ var showModal = function (buttonClassName, modalClassname) {
   }
 }
 
-overlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal--open");
-  overlay.classList.remove("overlay--open");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+if(openModal && modal) {
+  overlay.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (modal.classList.contains("modal--open") && overlay.classList.contains("overlay--open")) {
-      modal.classList.remove("modal--open");
-      overlay.classList.remove("overlay--open");
-    }
-  }
-});
+    modal.classList.remove("modal--open");
+    overlay.classList.remove("overlay--open");
+  });
 
-showModal(openModal, modal);
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modal.classList.contains("modal--open") && overlay.classList.contains("overlay--open")) {
+        modal.classList.remove("modal--open");
+        overlay.classList.remove("overlay--open");
+      }
+    }
+  });
+
+  showModal(openModal, modal);
+}
