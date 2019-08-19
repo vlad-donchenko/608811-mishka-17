@@ -23,7 +23,7 @@
   text-decoration: none;
 
   &:hover {
-    .site-footer__developer-logo {
+    path {
       fill: #46c1ae;
     }
   }
@@ -31,7 +31,7 @@
   &:focus {
     color: rgba($black, 0.3);
 
-    .site-footer__developer-logo {
+    path {
       fill: rgba(#46c1ae, 0.3);
     }
   }

@@ -12,6 +12,7 @@
 .customer-info__icon {
   position: absolute;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .customer-info__icon--mail {
