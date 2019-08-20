@@ -31,6 +31,7 @@
 
 .video__headline {
   position: relative;
+  width: 230px;
   margin: 0;
   padding-left: 55px;
   font-size: $base-font-size + 2px;
@@ -71,6 +72,7 @@
   border: none;
   transform: translate(-50%, -50%);
   transition: all 0.2s;
+  overflow: hidden;
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.2);
@@ -101,6 +103,7 @@
   }
 
   .video__headline {
+    width: auto;
     margin-top: 38px;
     padding-left: 72px;
     font-size: $base-font-size + 5px;
