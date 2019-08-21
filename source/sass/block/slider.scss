@@ -14,6 +14,18 @@
   height: 52px;
   border: 1px solid #ececec;
   background-color: transparent;
+
+  &:hover {
+    .reviews__arrow {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    .reviews__arrow {
+      opacity: 0.3;
+    }
+  }
 }
 
 .slider__toggle--prev {

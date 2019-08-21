@@ -12,6 +12,7 @@
 .customer-info__icon {
   position: absolute;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .customer-info__icon--mail {
@@ -26,7 +27,7 @@
   top: 11px;
 }
 
-.customer__input {
+.customer-info__input {
   width: 100%;
   padding-right: 45px;
   height: 51px;
@@ -46,17 +47,17 @@
   }
 }
 
-.customer__input:hover + .customer-info__icon {
+.customer-info__input:hover + .customer-info__icon {
   fill: #62d1ba;
   opacity: 1;
 }
 
-.customer__input:focus + .customer-info__icon {
+.customer-info__input:focus + .customer-info__icon {
   fill: #62d1ba;
   opacity: 1;
 }
 
-.customer__input::placeholder {
+.customer-info__input::placeholder {
   color: rgba($base-color, 0.3);
 }
 
@@ -78,7 +79,7 @@
   }
 }
 
-.customer__textarea {
+.customer-info__textarea {
   width: 100%;
   height: 142px;
   padding: 14px;
@@ -96,7 +97,7 @@
   }
 }
 
-.customer__textarea::placeholder {
+.customer-info__textarea::placeholder {
   color: rgba($base-color, 0.3);
 }
 
@@ -117,14 +118,14 @@
     letter-spacing: 0.99px;
   }
 
-  .customer__input {
+  .customer-info__input {
     height: 52px;
     font-size: $base-font-size + 4px;
     padding-left: 16px;
     padding-right: 76px;
   }
 
-  .customer__textarea {
+  .customer-info__textarea {
     padding-top: 12px;
     font-size: $base-font-size + 4px;
   }
@@ -147,7 +148,7 @@
     max-width: 700px;
   }
 
-  .customer__input {
+  .customer-info__input {
     padding-right: 45px;
   }
 

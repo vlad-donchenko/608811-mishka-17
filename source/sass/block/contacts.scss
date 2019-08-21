@@ -14,7 +14,7 @@
   display: block;
 }
 
-.contacts-headline {
+.contacts__headline {
   margin: 0 0 26px 0;
   font-size: $base-font-size + 3px;
   line-height: $base-line-height + 6px;
@@ -131,7 +131,7 @@
     display: block;
   }
 
-  .contacts-headline {
+  .contacts__headline {
     position: relative;
     margin-bottom: 49px;
     margin-left: -5px;
@@ -191,7 +191,7 @@
     padding-bottom: 100px;
   }
 
-  .contacts-headline {
+  .contacts__headline {
     top: 127px;
     margin-bottom: 0;
     width: 100%;
