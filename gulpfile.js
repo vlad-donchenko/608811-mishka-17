@@ -16,7 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require("gulp-concat");
-var jsmin = require('gulp-jsmin');
+var jsmin = require("gulp-jsmin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
